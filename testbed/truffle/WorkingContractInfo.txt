@@ -1,0 +1,255 @@
+OFFERS:
+- Address: 0x39c267ca27c3c3adbbb62d42b06b2bd1e93572ad
+
+- ABI: [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "name": "model",
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "endpoint",
+          "type": "string"
+        },
+        {
+          "name": "inputs",
+          "type": "string"
+        },
+        {
+          "name": "outputs",
+          "type": "string"
+        },
+        {
+          "name": "year",
+          "type": "uint16"
+        },
+        {
+          "name": "month",
+          "type": "uint8"
+        },
+        {
+          "name": "day",
+          "type": "uint8"
+        },
+        {
+          "name": "hour",
+          "type": "uint8"
+        }
+      ],
+      "name": "addOffer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getMyOffers",
+      "outputs": [
+        {
+          "name": "offerings",
+          "type": "uint256[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteOffer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getOffer",
+      "outputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        },
+        {
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "endpoint",
+          "type": "string"
+        },
+        {
+          "name": "inputs",
+          "type": "bytes32[]"
+        },
+        {
+          "name": "outputs",
+          "type": "bytes32[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOfferLength",
+      "outputs": [
+        {
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "destroy",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+
+SUBSCRIPTIONS:
+
+- Adress: 0x9c85094173bd535f06c05c18215d0d39d7e6e4ad
+
+- ABI: [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "createSubscription",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "returnSubscribers",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        },
+        {
+          "name": "subscriber",
+          "type": "address"
+        }
+      ],
+      "name": "checkSubscription",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteSubscription",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
