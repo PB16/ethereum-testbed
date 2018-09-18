@@ -1,7 +1,7 @@
 version: '2'
 services:
   bootnode:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     ports:
       - 9000
@@ -14,7 +14,7 @@ services:
       - ALL
     tty: true
     volumes:
-      - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+      - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
@@ -22,7 +22,7 @@ services:
         /bin/bash"
 
   miner1:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     tty: true
     ports:
@@ -34,7 +34,7 @@ services:
       app_net:
         ipv4_address: 172.18.0.100
     volumes:
-        - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+        - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
@@ -44,7 +44,7 @@ services:
         bin/bash"
 
   miner2:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     tty: true
     ports:
@@ -56,7 +56,7 @@ services:
       app_net:
         ipv4_address: 172.18.0.101
     volumes:
-        - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+        - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
@@ -66,7 +66,7 @@ services:
         bin/bash"
 
   node1:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     tty: true
     ports:
@@ -77,7 +77,7 @@ services:
       app_net:
         ipv4_address: 172.18.0.2
     volumes:
-        - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+        - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
@@ -86,7 +86,7 @@ services:
         /bin/bash"
 
   node2:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     tty: true
     ports:
@@ -97,7 +97,7 @@ services:
       app_net:
         ipv4_address: 172.18.0.3
     volumes:
-        - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+        - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
@@ -106,7 +106,7 @@ services:
         /bin/bash"
 
   node3:
-    image: testbed1
+    image: ${IMAGE}
     entrypoint: bash
     tty: true
     ports:
@@ -117,7 +117,7 @@ services:
       app_net:
         ipv4_address: 172.18.0.4
     volumes:
-        - /home/administrator/ethereum-testbed/testbed/docker/composer/filecontainer:/workspace
+        - ${VOLUME_PATH}
     privileged: true
     command: -c "cd ../workspace &&
         tc qdisc add dev eth0 root netem delay ${NET_DELAY} 20ms distribution normal &&
