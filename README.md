@@ -1,7 +1,7 @@
 # ethereum-testbed
 
 The current version of the testbed is located on the master branch.
-Information about how to use it can be found in the file called "userfindings".
+Information about how to use it can be found in the file called "userguide-findings".
 
 To use the testbed the following has to be installed:
   * Geth
