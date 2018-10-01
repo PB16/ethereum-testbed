@@ -1,0 +1,395 @@
+INFO [10-01|11:24:09.735] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [10-01|11:24:09.736] Allocated cache and file handles         database=/workspace/miner1/geth/chaindata cache=16 handles=16
+INFO [10-01|11:24:09.749] Writing custom genesis block 
+INFO [10-01|11:24:09.749] Persisted trie from memory database      nodes=3 size=413.00B time=73.188µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-01|11:24:09.749] Successfully wrote genesis state         database=chaindata                        hash=9f1e21…12b57d
+INFO [10-01|11:24:09.749] Allocated cache and file handles         database=/workspace/miner1/geth/lightchaindata cache=16 handles=16
+INFO [10-01|11:24:09.768] Writing custom genesis block 
+INFO [10-01|11:24:09.768] Persisted trie from memory database      nodes=3 size=413.00B time=69.064µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-01|11:24:09.768] Successfully wrote genesis state         database=lightchaindata                        hash=9f1e21…12b57d
+INFO [10-01|11:24:09.822] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [10-01|11:24:09.822] Starting peer-to-peer node               instance=Geth/v1.8.16-unstable-1d9d3815/linux-amd64/go1.10.1
+INFO [10-01|11:24:09.822] Allocated cache and file handles         database=/workspace/miner1/geth/chaindata cache=768 handles=1024
+INFO [10-01|11:24:09.845] Initialised chain configuration          config="{ChainID: 1234 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil> Engine: unknown}"
+INFO [10-01|11:24:09.845] Disk storage enabled for ethash caches   dir=/workspace/miner1/geth/ethash count=3
+INFO [10-01|11:24:09.845] Disk storage enabled for ethash DAGs     dir=/root/.ethash                 count=2
+INFO [10-01|11:24:09.845] Initialising Ethereum protocol           versions="[63 62]" network=1234
+INFO [10-01|11:24:09.846] Loaded most recent local header          number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+INFO [10-01|11:24:09.846] Loaded most recent local full block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+INFO [10-01|11:24:09.846] Loaded most recent local fast block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+INFO [10-01|11:24:09.846] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [10-01|11:24:09.846] Starting P2P networking 
+INFO [10-01|11:24:11.962] UDP listener up                          self=enode://b48e0a5985a05925ecdabfb5bd17968d2ebc969ca6d4c73b6f8d06b811ec203d93957d7ed2bc5d1940cd977b457efd908af248808f2089b09c2fa247cdf619dc@[::]:30303
+INFO [10-01|11:24:11.963] RLPx listener up                         self=enode://b48e0a5985a05925ecdabfb5bd17968d2ebc969ca6d4c73b6f8d06b811ec203d93957d7ed2bc5d1940cd977b457efd908af248808f2089b09c2fa247cdf619dc@[::]:30303
+INFO [10-01|11:24:11.969] IPC endpoint opened                      url=/workspace/miner1/geth.ipc
+INFO [10-01|11:24:13.548] IPC endpoint closed                      endpoint=/workspace/miner1/geth.ipc
+INFO [10-01|11:24:13.548] Blockchain manager stopped 
+INFO [10-01|11:24:13.548] Stopping Ethereum protocol 
+INFO [10-01|11:24:13.548] Ethereum protocol stopped 
+INFO [10-01|11:24:13.548] Transaction pool stopped 
+INFO [10-01|11:24:13.548] Database closed                          database=/workspace/miner1/geth/chaindata
+DEBUG[10-01|11:24:13.610] Sanitizing Go's GC trigger               percent=100
+INFO [10-01|11:24:13.610] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[10-01|11:24:13.610] FS scan times                            list=22.084µs set=2.708µs diff=1.578µs
+TRACE[10-01|11:24:13.610] Handled keystore changes                 time=31.933µs
+TRACE[10-01|11:24:13.610] Started watching keystore folder         path=/workspace/miner1/keystore
+INFO [10-01|11:24:13.611] Starting peer-to-peer node               instance=Geth/v1.8.16-unstable-1d9d3815/linux-amd64/go1.10.1
+INFO [10-01|11:24:13.611] Allocated cache and file handles         database=/workspace/miner1/geth/chaindata cache=768 handles=1024
+INFO [10-01|11:24:13.651] Initialised chain configuration          config="{ChainID: 1234 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil> Engine: unknown}"
+INFO [10-01|11:24:13.651] Disk storage enabled for ethash caches   dir=/workspace/miner1/geth/ethash count=3
+INFO [10-01|11:24:13.651] Disk storage enabled for ethash DAGs     dir=/root/.ethash                 count=2
+INFO [10-01|11:24:13.651] Initialising Ethereum protocol           versions="[63 62]" network=1234
+INFO [10-01|11:24:13.651] Loaded most recent local header          number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+INFO [10-01|11:24:13.651] Loaded most recent local full block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+INFO [10-01|11:24:13.651] Loaded most recent local fast block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
+DEBUG[10-01|11:24:13.651] Reinjecting stale transactions           count=0
+INFO [10-01|11:24:13.651] Loaded local transaction journal         transactions=0 dropped=0
+INFO [10-01|11:24:13.651] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[10-01|11:24:13.651] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-01|11:24:13.652] Starting P2P networking 
+DEBUG[10-01|11:24:15.753] Couldn't add port mapping                proto=udp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+DEBUG[10-01|11:24:15.770] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m15.770775124s
+INFO [10-01|11:24:15.770] UDP listener up                          self=enode://b48e0a5985a05925ecdabfb5bd17968d2ebc969ca6d4c73b6f8d06b811ec203d93957d7ed2bc5d1940cd977b457efd908af248808f2089b09c2fa247cdf619dc@[::]:30303
+INFO [10-01|11:24:15.770] RLPx listener up                         self=enode://b48e0a5985a05925ecdabfb5bd17968d2ebc969ca6d4c73b6f8d06b811ec203d93957d7ed2bc5d1940cd977b457efd908af248808f2089b09c2fa247cdf619dc@[::]:30303
+DEBUG[10-01|11:24:15.770] InProc registered                        service=&{node:0xc4203c9400} namespace=admin
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{node:0xc4203c9400} namespace=admin
+DEBUG[10-01|11:24:15.770] Couldn't add port mapping                proto=tcp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+TRACE[10-01|11:24:15.770] New dial task                            task="discovery lookup"
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{node:0xc4203c9400}                                                 namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{stack:0xc4203c9400}                                                namespace=web3
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{b:0xc42025d0d0}                                                    namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{b:0xc42025d0d0}                                                    namespace=eth
+TRACE[10-01|11:24:15.771] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{b:0xc42025d0d0 nonceLock:0xc42025cae0}"                           namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{b:0xc42025d0d0}                                                    namespace=txpool
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{b:0xc42025d0d0}                                                    namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{b:0xc42025d0d0}                                                    namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{am:0xc420240410}                                                   namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{am:0xc420240410 nonceLock:0xc42025cae0 b:0xc42025d0d0}"           namespace=personal
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{ethash:0xc4202e2700}                                               namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{ethash:0xc4202e2700}                                               namespace=ethash
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{e:0xc4202e28c0}                                                    namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{e:0xc4202e28c0}                                                    namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{d:0xc4202224e0 mux:0xc4202cda10 installSyncSubscription:0xc4203b3200 uninstallSyncSubscription:0xc4203b3260}" namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{e:0xc4202e28c0}                                                                                                namespace=miner
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{backend:0xc42025d0d0 mux:0xc4202cda10 quit:<nil> chainDb:0xc4200e9340 events:0xc4203da5a0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{eth:0xc4202e28c0}                                                                                                                     namespace=admin
+DEBUG[10-01|11:24:15.771] InProc registered                        service=&{eth:0xc4202e28c0}                                                                                                                     namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{config:0xc42023e100 eth:0xc4202e28c0}"                                                                                               namespace=debug
+DEBUG[10-01|11:24:15.771] InProc registered                        service="&{net:0xc4203c9680 networkVersion:1234}"                                                                                               namespace=net
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=admin
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=admin
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=web3
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m15.772101649s
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=txpool
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=personal
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=ethash
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+TRACE[10-01|11:24:15.772] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=miner
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=eth
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=admin
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=debug
+DEBUG[10-01|11:24:15.772] IPC registered                           namespace=net
+INFO [10-01|11:24:15.772] IPC endpoint opened                      url=/workspace/miner1/geth.ipc
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=admin
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=admin
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=web3
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=txpool
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=personal
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=miner
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=eth
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=admin
+DEBUG[10-01|11:24:15.772] HTTP registered                          namespace=net
+INFO [10-01|11:24:15.772] HTTP endpoint opened                     url=http://127.0.0.1:8545      cors= vhosts=localhost
+INFO [10-01|11:24:15.772] Transaction pool price threshold updated price=1000000000
+INFO [10-01|11:24:15.772] Updated mining threads                   threads=1
+INFO [10-01|11:24:15.772] Transaction pool price threshold updated price=1000000000
+INFO [10-01|11:24:15.772] Etherbase automatically configured       address=0x8BE5DE86680c17e83e3346E0387cF179fdfB4203
+INFO [10-01|11:24:15.773] Commit new mining work                   number=1 sealhash=8d715a…bda343 uncles=0 txs=0 gas=0 fees=0 elapsed=108.803µs
+TRACE[10-01|11:24:15.773] Requiring new ethash dataset             epoch=0
+TRACE[10-01|11:24:15.773] Requiring new future ethash dataset      epoch=1
+DEBUG[10-01|11:24:15.775] Failed to load old ethash dataset        epoch=0 err="open /root/.ethash/full-R23-0000000000000000: no such file or directory"
+DEBUG[10-01|11:24:16.383] Generated ethash verification cache      epoch=0 elapsed=603.120ms
+TRACE[10-01|11:24:16.779] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:16.790] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:17.284] Findnode failed                          id=8a080f000641843a failcount=1 err="RPC timeout"
+TRACE[10-01|11:24:17.284] Dial task done                           task="discovery lookup (1 results)"
+TRACE[10-01|11:24:17.284] New dial task                            task="dyndial 8a080f000641843a 172.19.0.200:30301"
+TRACE[10-01|11:24:17.284] New dial task                            task="discovery lookup"
+TRACE[10-01|11:24:17.294] Findnode failed                          id=8a080f000641843a failcount=1 err="RPC timeout"
+TRACE[10-01|11:24:17.294] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:17.315] Generating DAG in progress               epoch=0 percentage=0 elapsed=931.590ms
+INFO [10-01|11:24:18.201] Generating DAG in progress               epoch=0 percentage=1 elapsed=1.817s
+TRACE[10-01|11:24:18.338] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:18.843] Dial error                               task="dyndial 8a080f000641843a 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: connect: no route to host"
+TRACE[10-01|11:24:18.843] Dial task done                           task="dyndial 8a080f000641843a 172.19.0.200:30301"
+TRACE[10-01|11:24:18.858] Findnode failed                          id=8a080f000641843a failcount=2 err="RPC timeout"
+TRACE[10-01|11:24:18.858] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:19.106] Generating DAG in progress               epoch=0 percentage=2 elapsed=2.721s
+TRACE[10-01|11:24:19.774] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:19.898] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:20.410] Findnode failed                          id=8a080f000641843a failcount=3 err="RPC timeout"
+TRACE[10-01|11:24:20.410] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:20.807] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:20.867] Generating DAG in progress               epoch=0 percentage=3 elapsed=4.483s
+TRACE[10-01|11:24:21.314] Findnode failed                          id=8a080f000641843a failcount=3 err="RPC timeout"
+TRACE[10-01|11:24:21.314] Dial task done                           task="discovery lookup (1 results)"
+TRACE[10-01|11:24:21.314] Skipping dial candidate                  id=8a080f000641843a addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-01|11:24:21.314] New dial task                            task="discovery lookup"
+TRACE[10-01|11:24:21.450] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:21.954] Findnode failed                          id=8a080f000641843a failcount=4 err="RPC timeout"
+TRACE[10-01|11:24:22.146] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:22.649] Removed dead node                        b=16 id=8a080f000641843a ip=172.19.0.200
+INFO [10-01|11:24:22.884] Generating DAG in progress               epoch=0 percentage=4 elapsed=6.500s
+DEBUG[10-01|11:24:23.797] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m23.797496146s
+TRACE[10-01|11:24:23.797] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:24.931] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:25.358] Generating DAG in progress               epoch=0 percentage=5 elapsed=8.973s
+TRACE[10-01|11:24:25.474] Findnode failed                          id=8a080f000641843a failcount=5 err="RPC timeout"
+TRACE[10-01|11:24:25.474] Too many findnode failures, dropping     id=8a080f000641843a failcount=5
+TRACE[10-01|11:24:25.474] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:25.474] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:27.323] Generating DAG in progress               epoch=0 percentage=6 elapsed=10.938s
+DEBUG[10-01|11:24:27.817] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m27.818025083s
+TRACE[10-01|11:24:27.818] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:28.830] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:29.341] Findnode failed                          id=8a080f000641843a failcount=6 err="RPC timeout"
+TRACE[10-01|11:24:29.342] Too many findnode failures, dropping     id=8a080f000641843a failcount=6
+TRACE[10-01|11:24:29.342] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:29.342] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:29.487] Generating DAG in progress               epoch=0 percentage=7 elapsed=13.103s
+INFO [10-01|11:24:31.474] Generating DAG in progress               epoch=0 percentage=8 elapsed=15.089s
+DEBUG[10-01|11:24:31.822] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m31.822974729s
+TRACE[10-01|11:24:31.823] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:32.834] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:33.282] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:33.370] Findnode failed                          id=8a080f000641843a failcount=7 err="RPC timeout"
+TRACE[10-01|11:24:33.371] Too many findnode failures, dropping     id=8a080f000641843a failcount=7
+TRACE[10-01|11:24:33.371] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:33.371] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:33.422] Generating DAG in progress               epoch=0 percentage=9 elapsed=17.038s
+DEBUG[10-01|11:24:33.657] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[10-01|11:24:33.809] Removed dead node                        b=16 id=8a080f000641843a ip=172.19.0.200
+INFO [10-01|11:24:35.480] Generating DAG in progress               epoch=0 percentage=10 elapsed=19.096s
+DEBUG[10-01|11:24:35.849] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m35.849469801s
+TRACE[10-01|11:24:35.857] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:36.900] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:37.402] Findnode failed                          id=8a080f000641843a failcount=8 err="RPC timeout"
+TRACE[10-01|11:24:37.402] Too many findnode failures, dropping     id=8a080f000641843a failcount=8
+TRACE[10-01|11:24:37.402] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:37.402] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:37.454] Generating DAG in progress               epoch=0 percentage=11 elapsed=21.069s
+INFO [10-01|11:24:39.384] Generating DAG in progress               epoch=0 percentage=12 elapsed=22.999s
+DEBUG[10-01|11:24:39.890] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m39.890668584s
+TRACE[10-01|11:24:39.891] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:40.962] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:41.462] Generating DAG in progress               epoch=0 percentage=13 elapsed=25.078s
+TRACE[10-01|11:24:41.466] Findnode failed                          id=8a080f000641843a failcount=9 err="RPC timeout"
+TRACE[10-01|11:24:41.466] Too many findnode failures, dropping     id=8a080f000641843a failcount=9
+TRACE[10-01|11:24:41.466] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:41.466] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:43.665] Generating DAG in progress               epoch=0 percentage=14 elapsed=27.281s
+DEBUG[10-01|11:24:43.897] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m43.897864169s
+TRACE[10-01|11:24:43.898] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:44.468] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:44.942] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:44.975] Removed dead node                        b=16 id=8a080f000641843a ip=172.19.0.200
+TRACE[10-01|11:24:45.446] Findnode failed                          id=8a080f000641843a failcount=10 err="RPC timeout"
+TRACE[10-01|11:24:45.446] Too many findnode failures, dropping     id=8a080f000641843a failcount=10
+TRACE[10-01|11:24:45.446] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:45.446] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:45.812] Generating DAG in progress               epoch=0 percentage=15 elapsed=29.428s
+INFO [10-01|11:24:47.885] Generating DAG in progress               epoch=0 percentage=16 elapsed=31.500s
+DEBUG[10-01|11:24:47.906] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m47.906080349s
+TRACE[10-01|11:24:47.906] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:48.938] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:49.054] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:49.442] Findnode failed                          id=8a080f000641843a failcount=11 err="RPC timeout"
+TRACE[10-01|11:24:49.442] Too many findnode failures, dropping     id=8a080f000641843a failcount=11
+TRACE[10-01|11:24:49.443] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:49.443] New dial task                            task="discovery lookup"
+TRACE[10-01|11:24:49.583] Removed dead node                        b=16 id=8a080f000641843a ip=172.19.0.200
+INFO [10-01|11:24:49.926] Generating DAG in progress               epoch=0 percentage=17 elapsed=33.542s
+DEBUG[10-01|11:24:51.907] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m51.907428773s
+TRACE[10-01|11:24:51.907] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:52.008] Generating DAG in progress               epoch=0 percentage=18 elapsed=35.623s
+TRACE[10-01|11:24:52.918] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:53.446] Findnode failed                          id=8a080f000641843a failcount=12 err="RPC timeout"
+TRACE[10-01|11:24:53.447] Too many findnode failures, dropping     id=8a080f000641843a failcount=12
+TRACE[10-01|11:24:53.447] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:53.447] New dial task                            task="discovery lookup"
+DEBUG[10-01|11:24:53.665] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-01|11:24:54.241] Generating DAG in progress               epoch=0 percentage=19 elapsed=37.857s
+TRACE[10-01|11:24:55.887] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:55.887] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:55.887] << PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:55.910] << PONG/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-01|11:24:55.911] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=911.342777ms
+TRACE[10-01|11:24:55.911] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:24:56.202] Generating DAG in progress               epoch=0 percentage=20 elapsed=39.818s
+TRACE[10-01|11:24:56.434] Findnode failed                          id=8a080f000641843a failcount=13 err="RPC timeout"
+TRACE[10-01|11:24:56.434] Too many findnode failures, dropping     id=8a080f000641843a failcount=13
+TRACE[10-01|11:24:56.434] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:24:56.434] New dial task                            task="discovery lookup"
+INFO [10-01|11:24:58.327] Generating DAG in progress               epoch=0 percentage=21 elapsed=41.943s
+TRACE[10-01|11:24:59.890] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:59.891] << PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:59.914] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:24:59.926] << PONG/v4                               addr=172.19.0.200:30301 err="unsolicited reply"
+TRACE[10-01|11:25:00.442] Findnode failed                          id=8a080f000641843a failcount=14 err="RPC timeout"
+TRACE[10-01|11:25:00.442] Too many findnode failures, dropping     id=8a080f000641843a failcount=14
+TRACE[10-01|11:25:00.442] Dial task done                           task="discovery lookup (1 results)"
+TRACE[10-01|11:25:00.442] Skipping dial candidate                  id=8a080f000641843a addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-01|11:25:00.442] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:00.774] Generating DAG in progress               epoch=0 percentage=22 elapsed=44.390s
+INFO [10-01|11:25:03.030] Generating DAG in progress               epoch=0 percentage=23 elapsed=46.646s
+DEBUG[10-01|11:25:03.918] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=8.918854911s
+TRACE[10-01|11:25:03.919] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:03.924] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:03.924] << PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:03.938] << PONG/v4                               addr=172.19.0.200:30301 err="unsolicited reply"
+TRACE[10-01|11:25:04.422] Findnode failed                          id=8a080f000641843a failcount=15 err="RPC timeout"
+TRACE[10-01|11:25:04.422] Too many findnode failures, dropping     id=8a080f000641843a failcount=15
+TRACE[10-01|11:25:04.422] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:04.422] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:05.210] Generating DAG in progress               epoch=0 percentage=24 elapsed=48.826s
+INFO [10-01|11:25:07.465] Generating DAG in progress               epoch=0 percentage=25 elapsed=51.081s
+DEBUG[10-01|11:25:07.937] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=12.937194935s
+TRACE[10-01|11:25:07.937] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:08.438] Findnode failed                          id=8a080f000641843a failcount=16 err="RPC timeout"
+TRACE[10-01|11:25:08.438] Too many findnode failures, dropping     id=8a080f000641843a failcount=16
+TRACE[10-01|11:25:08.438] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:08.438] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:09.595] Generating DAG in progress               epoch=0 percentage=26 elapsed=53.211s
+INFO [10-01|11:25:11.681] Generating DAG in progress               epoch=0 percentage=27 elapsed=55.297s
+DEBUG[10-01|11:25:11.938] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=16.93901812s
+TRACE[10-01|11:25:11.939] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:12.446] Findnode failed                          id=8a080f000641843a failcount=17 err="RPC timeout"
+TRACE[10-01|11:25:12.446] Too many findnode failures, dropping     id=8a080f000641843a failcount=17
+TRACE[10-01|11:25:12.446] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:12.446] New dial task                            task="discovery lookup"
+DEBUG[10-01|11:25:13.685] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-01|11:25:14.139] Generating DAG in progress               epoch=0 percentage=28 elapsed=57.754s
+DEBUG[10-01|11:25:15.969] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=20.969508085s
+TRACE[10-01|11:25:15.973] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:25:16.346] Generating DAG in progress               epoch=0 percentage=29 elapsed=59.962s
+TRACE[10-01|11:25:16.474] Findnode failed                          id=8a080f000641843a failcount=18 err="RPC timeout"
+TRACE[10-01|11:25:16.474] Too many findnode failures, dropping     id=8a080f000641843a failcount=18
+TRACE[10-01|11:25:16.474] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:16.474] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:18.502] Generating DAG in progress               epoch=0 percentage=30 elapsed=1m2.117s
+DEBUG[10-01|11:25:19.967] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=24.96751846s
+TRACE[10-01|11:25:19.968] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:20.482] Findnode failed                          id=8a080f000641843a failcount=19 err="RPC timeout"
+TRACE[10-01|11:25:20.482] Too many findnode failures, dropping     id=8a080f000641843a failcount=19
+TRACE[10-01|11:25:20.482] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:20.482] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:21.043] Generating DAG in progress               epoch=0 percentage=31 elapsed=1m4.658s
+TRACE[10-01|11:25:21.110] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+INFO [10-01|11:25:23.401] Generating DAG in progress               epoch=0 percentage=32 elapsed=1m7.016s
+TRACE[10-01|11:25:23.920] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+DEBUG[10-01|11:25:23.993] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=28.993864086s
+TRACE[10-01|11:25:23.998] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:24.502] Findnode failed                          id=8a080f000641843a failcount=20 err="RPC timeout"
+TRACE[10-01|11:25:24.509] Too many findnode failures, dropping     id=8a080f000641843a failcount=20
+TRACE[10-01|11:25:24.509] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:24.509] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:25.544] Generating DAG in progress               epoch=0 percentage=33 elapsed=1m9.160s
+INFO [10-01|11:25:27.828] Generating DAG in progress               epoch=0 percentage=34 elapsed=1m11.444s
+TRACE[10-01|11:25:27.938] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+DEBUG[10-01|11:25:28.003] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=33.00362783s
+TRACE[10-01|11:25:28.010] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:28.518] Findnode failed                          id=8a080f000641843a failcount=21 err="RPC timeout"
+TRACE[10-01|11:25:28.518] Too many findnode failures, dropping     id=8a080f000641843a failcount=21
+TRACE[10-01|11:25:28.518] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:28.518] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:30.207] Generating DAG in progress               epoch=0 percentage=35 elapsed=1m13.823s
+DEBUG[10-01|11:25:32.007] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=37.007757703s
+TRACE[10-01|11:25:32.008] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:32.018] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:25:32.265] Generating DAG in progress               epoch=0 percentage=36 elapsed=1m15.880s
+TRACE[10-01|11:25:32.521] Findnode failed                          id=8a080f000641843a failcount=22 err="RPC timeout"
+TRACE[10-01|11:25:32.521] Too many findnode failures, dropping     id=8a080f000641843a failcount=22
+TRACE[10-01|11:25:32.522] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:32.522] New dial task                            task="discovery lookup"
+DEBUG[10-01|11:25:33.689] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-01|11:25:34.351] Generating DAG in progress               epoch=0 percentage=37 elapsed=1m17.967s
+TRACE[10-01|11:25:36.014] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+DEBUG[10-01|11:25:36.023] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=41.023067988s
+TRACE[10-01|11:25:36.023] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:25:36.380] Generating DAG in progress               epoch=0 percentage=38 elapsed=1m19.996s
+TRACE[10-01|11:25:36.562] Findnode failed                          id=8a080f000641843a failcount=23 err="RPC timeout"
+TRACE[10-01|11:25:36.562] Too many findnode failures, dropping     id=8a080f000641843a failcount=23
+TRACE[10-01|11:25:36.562] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:36.562] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:38.480] Generating DAG in progress               epoch=0 percentage=39 elapsed=1m22.095s
+TRACE[10-01|11:25:39.936] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+DEBUG[10-01|11:25:40.020] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=45.020529075s
+TRACE[10-01|11:25:40.021] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:40.541] Findnode failed                          id=8a080f000641843a failcount=24 err="RPC timeout"
+TRACE[10-01|11:25:40.541] Too many findnode failures, dropping     id=8a080f000641843a failcount=24
+TRACE[10-01|11:25:40.541] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:40.541] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:40.725] Generating DAG in progress               epoch=0 percentage=40 elapsed=1m24.341s
+INFO [10-01|11:25:42.741] Generating DAG in progress               epoch=0 percentage=41 elapsed=1m26.356s
+DEBUG[10-01|11:25:44.027] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=49.027356287s
+TRACE[10-01|11:25:44.027] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:44.042] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err=nil
+TRACE[10-01|11:25:44.530] Findnode failed                          id=8a080f000641843a failcount=25 err="RPC timeout"
+TRACE[10-01|11:25:44.530] Too many findnode failures, dropping     id=8a080f000641843a failcount=25
+TRACE[10-01|11:25:44.531] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+INFO [10-01|11:25:44.892] Generating DAG in progress               epoch=0 percentage=42 elapsed=1m28.508s
+TRACE[10-01|11:25:45.554] >> FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:46.077] Findnode failed                          id=adb6219a837e1b58 failcount=1  err="RPC timeout"
+TRACE[10-01|11:25:46.078] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:47.134] >> FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+INFO [10-01|11:25:47.223] Generating DAG in progress               epoch=0 percentage=43 elapsed=1m30.839s
+TRACE[10-01|11:25:47.642] Findnode failed                          id=adb6219a837e1b58 failcount=2  err="RPC timeout"
+TRACE[10-01|11:25:47.642] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:48.002] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+TRACE[10-01|11:25:48.174] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:48.678] >> FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:48.698] Removed dead node                        b=16 id=adb6219a837e1b58 ip=172.19.0.3
+TRACE[10-01|11:25:49.187] Findnode failed                          id=adb6219a837e1b58 failcount=3  err="RPC timeout"
+TRACE[10-01|11:25:49.187] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:49.187] New dial task                            task="discovery lookup"
+DEBUG[10-01|11:25:49.193] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=54.19371902s
+TRACE[10-01|11:25:49.210] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:25:49.466] Generating DAG in progress               epoch=0 percentage=44 elapsed=1m33.082s
+TRACE[10-01|11:25:49.741] Findnode failed                          id=8a080f000641843a failcount=26 err="RPC timeout"
+TRACE[10-01|11:25:49.741] Too many findnode failures, dropping     id=8a080f000641843a failcount=26
+TRACE[10-01|11:25:49.741] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:49.741] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:51.445] Generating DAG in progress               epoch=0 percentage=45 elapsed=1m35.061s
+TRACE[10-01|11:25:51.959] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
+DEBUG[10-01|11:25:53.208] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=58.208913522s
+TRACE[10-01|11:25:53.214] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+INFO [10-01|11:25:53.454] Generating DAG in progress               epoch=0 percentage=46 elapsed=1m37.070s
+DEBUG[10-01|11:25:53.690] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[10-01|11:25:53.742] Findnode failed                          id=8a080f000641843a failcount=27 err="RPC timeout"
+TRACE[10-01|11:25:53.742] Too many findnode failures, dropping     id=8a080f000641843a failcount=27
+TRACE[10-01|11:25:53.742] Dial task done                           task="discovery lookup"
+TRACE[10-01|11:25:53.742] New dial task                            task="discovery lookup"
+INFO [10-01|11:25:55.596] Generating DAG in progress               epoch=0 percentage=47 elapsed=1m39.212s

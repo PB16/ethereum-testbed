@@ -1,0 +1,307 @@
+INFO [10-01|11:24:10.572] UDP listener up                          self=enode://8a080f000641843af0e117381feb090677ef7d674448e6d3b94f7d3fda46f3c52a727ab9113a9c5c7bf6cb09addc3e3ffbe4f8d4b55ee174d3bd683746e0d638@[::]:30301
+TRACE[10-01|11:24:44.852] >> PONG/v4                               addr=172.19.0.3:30303 err=nil
+TRACE[10-01|11:24:44.852] >> PING/v4                               addr=172.19.0.3:30303 err=nil
+TRACE[10-01|11:24:44.852] << PING/v4                               addr=172.19.0.3:30303 err=nil
+TRACE[10-01|11:24:45.830] >> PONG/v4                               addr=172.19.0.2:30303 err=nil
+TRACE[10-01|11:24:45.830] >> PING/v4                               addr=172.19.0.2:30303 err=nil
+TRACE[10-01|11:24:45.830] << PING/v4                               addr=172.19.0.2:30303 err=nil
+TRACE[10-01|11:24:45.852] << FINDNODE/v4                           addr=172.19.0.3:30303 err="unknown node"
+TRACE[10-01|11:24:45.863] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:45.863] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:45.863] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:46.369] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:46.369] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:46.369] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:46.841] << FINDNODE/v4                           addr=172.19.0.2:30303   err="unknown node"
+TRACE[10-01|11:24:46.923] << FINDNODE/v4                           addr=172.19.0.100:30303 err="unknown node"
+TRACE[10-01|11:24:47.340] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.342] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.342] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.806] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.807] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.807] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:47.986] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:47.987] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:47.987] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:48.342] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:24:48.810] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:48.811] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:48.811] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:49.044] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:24:49.810] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:49.810] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:49.810] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:49.853] << FINDNODE/v4                           addr=172.19.0.3:30303   err="unknown node"
+TRACE[10-01|11:24:49.910] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:49.911] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:49.911] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:50.782] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:50.782] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:50.782] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:50.839] << FINDNODE/v4                           addr=172.19.0.2:30303   err="unknown node"
+TRACE[10-01|11:24:50.951] << FINDNODE/v4                           addr=172.19.0.100:30303 err="unknown node"
+TRACE[10-01|11:24:51.324] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:51.324] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:51.324] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:51.993] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:51.994] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:51.994] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:52.335] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:24:52.813] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:52.813] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:52.813] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:52.844] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:52.845] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:52.845] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:53.018] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:24:53.306] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:53.307] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:53.307] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:53.373] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:53.374] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:53.374] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:53.844] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:53.844] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:53.844] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:53.866] << FINDNODE/v4                           addr=172.19.0.3:30303   err="unknown node"
+TRACE[10-01|11:24:53.909] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:53.909] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:53.909] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:54.474] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:54.474] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:54.474] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:54.800] << FINDNODE/v4                           addr=172.19.0.2:30303   err="unknown node"
+TRACE[10-01|11:24:54.912] << FINDNODE/v4                           addr=172.19.0.100:30303 err="unknown node"
+TRACE[10-01|11:24:55.363] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:55.365] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:55.365] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:55.970] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:55.970] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:55.970] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:24:56.354] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:24:56.813] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:56.813] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:56.813] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:24:57.068] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:24:57.829] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:57.829] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:57.829] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:24:57.837] << FINDNODE/v4                           addr=172.19.0.3:30303   err="unknown node"
+TRACE[10-01|11:24:57.930] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:57.931] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:57.931] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:58.826] << FINDNODE/v4                           addr=172.19.0.2:30303   err="unknown node"
+TRACE[10-01|11:24:58.969] << FINDNODE/v4                           addr=172.19.0.100:30303 err="unknown node"
+TRACE[10-01|11:24:59.059] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:59.059] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:59.059] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:24:59.368] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:59.369] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:59.369] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:59.527] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:59.527] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:24:59.527] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:00.029] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.030] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.030] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.187] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.188] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.188] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:00.376] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:25:00.869] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:00.869] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:00.869] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:01.072] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:25:01.829] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:01.829] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:01.829] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:01.852] << FINDNODE/v4                           addr=172.19.0.3:30303   err="unknown node"
+TRACE[10-01|11:25:01.930] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:01.930] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:01.930] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:01.976] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:01.977] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:01.977] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:02.861] << FINDNODE/v4                           addr=172.19.0.2:30303   err="unknown node"
+TRACE[10-01|11:25:02.914] << FINDNODE/v4                           addr=172.19.0.100:30303 err="unknown node"
+TRACE[10-01|11:25:03.353] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:03.355] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:03.356] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:04.068] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:04.069] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:04.069] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:04.339] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:25:04.806] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.806] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.806] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.807] << PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.857] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.857] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.990] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:04.990] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:05.003] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:05.003] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:05.003] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:05.149] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:25:05.804] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.805] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.805] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.811] << PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.845] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.845] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:05.883] >> PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:05.885] >> PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:05.887] << PING/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:05.902] << PONG/v4                               addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:05.908] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:05.908] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:06.333] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:07.318] << PONG/v4                               addr=172.19.0.4:30303   err="unsolicited reply"
+TRACE[10-01|11:25:07.334] >> PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:07.335] >> PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:07.335] << PING/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:07.341] << FINDNODE/v4                           addr=172.19.0.4:30303   err="unknown node"
+TRACE[10-01|11:25:07.777] << PONG/v4                               addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:07.961] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:07.999] << PONG/v4                               addr=172.19.0.101:30303 err="unsolicited reply"
+TRACE[10-01|11:25:08.010] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:08.011] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:08.011] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:08.100] << FINDNODE/v4                           addr=172.19.0.101:30303 err="unknown node"
+TRACE[10-01|11:25:08.461] Removed dead node                        b=9 id=adb6219a837e1b58 ip=172.19.0.3
+TRACE[10-01|11:25:08.816] << PONG/v4                               addr=172.19.0.3:30303   err="unsolicited reply"
+TRACE[10-01|11:25:08.829] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:08.829] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:09.804] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:09.804] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:09.848] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:09.898] << PONG/v4                               addr=172.19.0.100:30303 err="unsolicited reply"
+TRACE[10-01|11:25:09.916] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:09.917] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:10.776] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:11.230] >> PONG/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:11.230] << PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:11.308] << PONG/v4                               addr=172.19.0.4:30303   err="unsolicited reply"
+TRACE[10-01|11:25:11.354] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:11.354] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:11.368] >> PING/v4                               addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:11.871] Removed dead node                        b=16 id=5ee157bd3394d8d0 ip=172.19.0.2
+TRACE[10-01|11:25:11.940] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:11.941] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:11.941] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:11.968] << PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:12.057] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:12.057] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:12.825] << PONG/v4                               addr=172.19.0.4:30303   err="unsolicited reply"
+TRACE[10-01|11:25:12.837] << PONG/v4                               addr=172.19.0.3:30303   err="unsolicited reply"
+TRACE[10-01|11:25:12.838] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:12.838] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:13.412] << PONG/v4                               addr=172.19.0.101:30303 err="unsolicited reply"
+TRACE[10-01|11:25:13.839] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:13.839] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:13.849] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:13.910] << PONG/v4                               addr=172.19.0.100:30303 err="unsolicited reply"
+TRACE[10-01|11:25:13.919] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:13.920] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:13.949] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:13.950] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:15.381] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:15.381] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:15.417] << PONG/v4                               addr=172.19.0.4:30303   err="unsolicited reply"
+TRACE[10-01|11:25:15.963] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:15.971] << PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:16.082] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:16.082] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:16.463] Removed dead node                        b=15 id=cdb9461bcdbcff2c ip=172.19.0.101
+TRACE[10-01|11:25:16.886] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:16.886] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:17.828] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:17.828] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:17.937] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:17.938] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:19.351] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:19.351] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:20.095] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:20.095] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:20.416] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:20.825] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:20.825] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:21.822] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:21.822] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:21.831] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:21.981] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:21.982] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:23.368] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:23.368] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:24.139] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:24.139] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:24.827] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:24.827] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:25.825] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:25.825] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:25.825] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:26.015] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:26.015] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:27.381] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:27.381] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:28.151] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:28.151] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:28.800] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:28.800] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:29.231] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:29.232] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:29.852] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:29.852] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:29.950] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:29.950] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:30.096] << PONG/v4                               addr=172.19.0.3:30303   err="unsolicited reply"
+TRACE[10-01|11:25:30.565] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:31.065] Removed dead node                        b=9  id=adb6219a837e1b58 ip=172.19.0.3
+TRACE[10-01|11:25:31.147] >> PONG/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:31.147] << PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:31.323] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:31.323] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:31.392] << PONG/v4                               addr=172.19.0.2:30303   err="unsolicited reply"
+TRACE[10-01|11:25:32.210] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:32.210] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:32.850] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:32.851] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:33.225] << PONG/v4                               addr=172.19.0.101:30303 err="unsolicited reply"
+TRACE[10-01|11:25:33.850] >> PING/v4                               addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:33.862] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:33.862] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:34.035] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:34.035] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:34.081] >> PONG/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:34.081] << PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:34.350] Removed dead node                        b=9  id=adb6219a837e1b58 ip=172.19.0.3
+TRACE[10-01|11:25:35.337] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:35.338] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:35.960] << PONG/v4                               addr=172.19.0.101:30303 err="unsolicited reply"
+TRACE[10-01|11:25:36.193] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:36.193] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:36.824] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:36.824] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:37.857] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:37.857] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:37.995] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:37.995] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:40.213] >> NEIGHBORS/v4                          addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:40.213] << FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:40.358] >> PING/v4                               addr=172.19.0.101:30303 err=nil
+TRACE[10-01|11:25:40.858] Removed dead node                        b=15 id=cdb9461bcdbcff2c ip=172.19.0.101
+TRACE[10-01|11:25:41.859] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:41.859] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:41.993] >> NEIGHBORS/v4                          addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:41.993] << FINDNODE/v4                           addr=172.19.0.100:30303 err=nil
+TRACE[10-01|11:25:45.841] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:45.841] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:49.837] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:49.837] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:53.854] >> NEIGHBORS/v4                          addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:53.854] << FINDNODE/v4                           addr=172.19.0.3:30303   err=nil
+TRACE[10-01|11:25:53.861] >> NEIGHBORS/v4                          addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:53.861] << FINDNODE/v4                           addr=172.19.0.2:30303   err=nil
+TRACE[10-01|11:25:53.862] << PONG/v4                               addr=172.19.0.3:30303   err="unsolicited reply"
+TRACE[10-01|11:25:56.445] >> NEIGHBORS/v4                          addr=172.19.0.4:30303   err=nil
+TRACE[10-01|11:25:56.445] << FINDNODE/v4                           addr=172.19.0.4:30303   err=nil
