@@ -1,310 +1,875 @@
-INFO [10-01|11:24:14.620] Maximum peer count                       ETH=25 LES=0 total=25
-INFO [10-01|11:24:14.620] Allocated cache and file handles         database=/workspace/node3/geth/chaindata cache=16 handles=16
-INFO [10-01|11:24:14.632] Writing custom genesis block 
-INFO [10-01|11:24:14.633] Persisted trie from memory database      nodes=3 size=413.00B time=49.682µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [10-01|11:24:14.633] Successfully wrote genesis state         database=chaindata                       hash=9f1e21…12b57d
-INFO [10-01|11:24:14.633] Allocated cache and file handles         database=/workspace/node3/geth/lightchaindata cache=16 handles=16
-INFO [10-01|11:24:14.651] Writing custom genesis block 
-INFO [10-01|11:24:14.651] Persisted trie from memory database      nodes=3 size=413.00B time=129.579µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [10-01|11:24:14.651] Successfully wrote genesis state         database=lightchaindata                       hash=9f1e21…12b57d
-DEBUG[10-01|11:24:14.701] Sanitizing Go's GC trigger               percent=100
-INFO [10-01|11:24:14.702] Maximum peer count                       ETH=25 LES=0 total=25
-DEBUG[10-01|11:24:14.702] FS scan times                            list=21.664µs set=550ns diff=749ns
-TRACE[10-01|11:24:14.702] Started watching keystore folder         path=/workspace/node3/keystore
-INFO [10-01|11:24:14.702] Starting peer-to-peer node               instance=Geth/v1.8.16-unstable-1d9d3815/linux-amd64/go1.10.1
-INFO [10-01|11:24:14.702] Allocated cache and file handles         database=/workspace/node3/geth/chaindata cache=768 handles=1024
-INFO [10-01|11:24:14.725] Initialised chain configuration          config="{ChainID: 1234 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil> Engine: unknown}"
-INFO [10-01|11:24:14.725] Disk storage enabled for ethash caches   dir=/workspace/node3/geth/ethash count=3
-INFO [10-01|11:24:14.725] Disk storage enabled for ethash DAGs     dir=/root/.ethash                count=2
-INFO [10-01|11:24:14.725] Initialising Ethereum protocol           versions="[63 62]" network=1234
-INFO [10-01|11:24:14.726] Loaded most recent local header          number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
-INFO [10-01|11:24:14.726] Loaded most recent local full block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
-INFO [10-01|11:24:14.726] Loaded most recent local fast block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo2w
-DEBUG[10-01|11:24:14.726] Reinjecting stale transactions           count=0
-INFO [10-01|11:24:14.726] Regenerated local transaction journal    transactions=0 accounts=0
-DEBUG[10-01|11:24:14.726] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
-INFO [10-01|11:24:14.726] Starting P2P networking 
-DEBUG[10-01|11:24:16.826] Couldn't add port mapping                proto=udp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
-DEBUG[10-01|11:24:16.841] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m16.841107227s
-INFO [10-01|11:24:16.841] UDP listener up                          self=enode://e3f496022f69284f3db5cf3e645e54df49166a7cbb3ade2cb4cd15f9cbaddce1454eb8c26cde44e0917935ebe3dee61f9b2036fa0e2ffdce5a696a7b2506de0e@[::]:30303
-DEBUG[10-01|11:24:16.841] InProc registered                        service=&{node:0xc42014f680} namespace=admin
-DEBUG[10-01|11:24:16.841] InProc registered                        service=&{node:0xc42014f680} namespace=admin
-DEBUG[10-01|11:24:16.841] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
-DEBUG[10-01|11:24:16.841] InProc registered                        service=&{node:0xc42014f680}                                                 namespace=debug
-DEBUG[10-01|11:24:16.841] InProc registered                        service=&{stack:0xc42014f680}                                                namespace=web3
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{b:0xc420072a40}                                                    namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{b:0xc420072a40}                                                    namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service="&{b:0xc420072a40 nonceLock:0xc420073dc0}"                           namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{b:0xc420072a40}                                                    namespace=txpool
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{b:0xc420072a40}                                                    namespace=debug
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{b:0xc420072a40}                                                    namespace=debug
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{am:0xc42021eea0}                                                   namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service="&{am:0xc42021eea0 nonceLock:0xc420073dc0 b:0xc420072a40}"           namespace=personal
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{ethash:0xc42030a7e0}                                               namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{ethash:0xc42030a7e0}                                               namespace=ethash
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{e:0xc42030a8c0}                                                    namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service=&{e:0xc42030a8c0}                                                    namespace=eth
-DEBUG[10-01|11:24:16.842] InProc registered                        service="&{d:0xc4202204e0 mux:0xc4200b1590 installSyncSubscription:0xc420472c00 uninstallSyncSubscription:0xc420472c60}" namespace=eth
-DEBUG[10-01|11:24:16.843] InProc registered                        service=&{e:0xc42030a8c0}                                                                                                namespace=miner
-DEBUG[10-01|11:24:16.843] InProc registered                        service="&{backend:0xc420072a40 mux:0xc4200b1590 quit:<nil> chainDb:0xc4202f2fd0 events:0xc42042a500 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
-DEBUG[10-01|11:24:16.843] InProc registered                        service=&{eth:0xc42030a8c0}                                                                                                                     namespace=admin
-DEBUG[10-01|11:24:16.843] InProc registered                        service=&{eth:0xc42030a8c0}                                                                                                                     namespace=debug
-DEBUG[10-01|11:24:16.843] InProc registered                        service="&{config:0xc420216200 eth:0xc42030a8c0}"                                                                                               namespace=debug
-DEBUG[10-01|11:24:16.843] InProc registered                        service="&{net:0xc42014f900 networkVersion:1234}"                                                                                               namespace=net
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=admin
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=admin
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=web3
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=txpool
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=personal
-DEBUG[10-01|11:24:16.843] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=ethash
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=miner
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=eth
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=admin
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=debug
-DEBUG[10-01|11:24:16.844] IPC registered                           namespace=net
-INFO [10-01|11:24:16.844] IPC endpoint opened                      url=/workspace/node3/geth.ipc
-DEBUG[10-01|11:24:16.845] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m16.845108267s
-INFO [10-01|11:24:16.845] RLPx listener up                         self=enode://e3f496022f69284f3db5cf3e645e54df49166a7cbb3ade2cb4cd15f9cbaddce1454eb8c26cde44e0917935ebe3dee61f9b2036fa0e2ffdce5a696a7b2506de0e@[::]:30303
-DEBUG[10-01|11:24:16.845] Couldn't add port mapping                proto=tcp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
-TRACE[10-01|11:24:16.845] New dial task                            task="discovery lookup"
-TRACE[10-01|11:24:16.845] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:16.846] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:17.846] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:17.846] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:18.346] Findnode failed                          id=8a080f000641843a failcount=1 err="RPC timeout"
-TRACE[10-01|11:24:18.346] Findnode failed                          id=8a080f000641843a failcount=1 err="RPC timeout"
-TRACE[10-01|11:24:18.346] Dial task done                           task="discovery lookup (1 results)"
-TRACE[10-01|11:24:18.346] New dial task                            task="dyndial 8a080f000641843a 172.19.0.200:30301"
-TRACE[10-01|11:24:18.346] New dial task                            task="discovery lookup"
-TRACE[10-01|11:24:18.346] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:18.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:18.959] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-TRACE[10-01|11:24:19.347] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:19.847] Findnode failed                          id=8a080f000641843a failcount=2 err="RPC timeout"
-TRACE[10-01|11:24:19.922] Dial error                               task="dyndial 8a080f000641843a 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: connect: no route to host"
-TRACE[10-01|11:24:19.922] Dial task done                           task="dyndial 8a080f000641843a 172.19.0.200:30301"
-DEBUG[10-01|11:24:20.846] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m20.846672907s
-TRACE[10-01|11:24:20.847] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:21.847] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:22.347] Findnode failed                          id=8a080f000641843a failcount=3 err="RPC timeout"
-TRACE[10-01|11:24:22.348] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:23.349] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:23.849] Findnode failed                          id=8a080f000641843a failcount=4 err="RPC timeout"
-TRACE[10-01|11:24:23.849] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:24.850] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:25.351] Findnode failed                          id=8a080f000641843a failcount=5 err="RPC timeout"
-TRACE[10-01|11:24:25.351] Too many findnode failures, dropping     id=8a080f000641843a failcount=5
-TRACE[10-01|11:24:25.352] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:25.352] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:25.353] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m25.353165072s
-TRACE[10-01|11:24:25.353] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:26.354] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:26.854] Findnode failed                          id=8a080f000641843a failcount=6 err="RPC timeout"
-TRACE[10-01|11:24:26.854] Too many findnode failures, dropping     id=8a080f000641843a failcount=6
-TRACE[10-01|11:24:26.854] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:26.854] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:29.353] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m29.353284684s
-TRACE[10-01|11:24:29.353] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:30.354] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:30.854] Findnode failed                          id=8a080f000641843a failcount=7 err="RPC timeout"
-TRACE[10-01|11:24:30.854] Too many findnode failures, dropping     id=8a080f000641843a failcount=7
-TRACE[10-01|11:24:30.854] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:30.854] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:33.353] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m33.353434788s
-TRACE[10-01|11:24:33.353] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:33.650] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:34.150] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-TRACE[10-01|11:24:34.354] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-DEBUG[10-01|11:24:34.726] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
-TRACE[10-01|11:24:34.856] Findnode failed                          id=8a080f000641843a failcount=8 err="RPC timeout"
-TRACE[10-01|11:24:34.856] Too many findnode failures, dropping     id=8a080f000641843a failcount=8
-TRACE[10-01|11:24:34.856] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:34.856] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:37.353] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m37.353807272s
-TRACE[10-01|11:24:37.354] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:37.792] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:38.292] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-TRACE[10-01|11:24:38.356] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:38.856] Findnode failed                          id=8a080f000641843a failcount=9 err="RPC timeout"
-TRACE[10-01|11:24:38.856] Too many findnode failures, dropping     id=8a080f000641843a failcount=9
-TRACE[10-01|11:24:38.856] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:38.856] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:41.353] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m41.353960962s
-TRACE[10-01|11:24:41.354] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:42.355] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:42.797] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:42.855] Findnode failed                          id=8a080f000641843a failcount=10 err="RPC timeout"
-TRACE[10-01|11:24:42.855] Too many findnode failures, dropping     id=8a080f000641843a failcount=10
-TRACE[10-01|11:24:42.855] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:42.855] New dial task                            task="discovery lookup"
-TRACE[10-01|11:24:43.297] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-DEBUG[10-01|11:24:45.354] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m45.354085341s
-TRACE[10-01|11:24:45.354] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:46.355] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:46.856] Findnode failed                          id=8a080f000641843a failcount=11 err="RPC timeout"
-TRACE[10-01|11:24:46.856] Too many findnode failures, dropping     id=8a080f000641843a failcount=11
-TRACE[10-01|11:24:46.856] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:46.857] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:49.358] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m49.358188802s
-TRACE[10-01|11:24:49.358] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:49.519] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:50.019] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-TRACE[10-01|11:24:50.359] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:50.859] Findnode failed                          id=8a080f000641843a failcount=12 err="RPC timeout"
-TRACE[10-01|11:24:50.859] Too many findnode failures, dropping     id=8a080f000641843a failcount=12
-TRACE[10-01|11:24:50.859] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:50.859] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:24:53.358] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=427331h24m53.358464694s
-TRACE[10-01|11:24:53.359] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:54.360] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-DEBUG[10-01|11:24:54.726] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
-TRACE[10-01|11:24:54.860] Findnode failed                          id=8a080f000641843a failcount=13 err="RPC timeout"
-TRACE[10-01|11:24:54.860] Too many findnode failures, dropping     id=8a080f000641843a failcount=13
-TRACE[10-01|11:24:54.860] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:54.860] New dial task                            task="discovery lookup"
-TRACE[10-01|11:24:57.317] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.318] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.318] << PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.321] << PONG/v4                               addr=172.19.0.200:30301 err=nil
-DEBUG[10-01|11:24:57.358] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=358.977707ms
-TRACE[10-01|11:24:57.359] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.786] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.786] << PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.796] << PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:24:57.859] Findnode failed                          id=8a080f000641843a failcount=14 err="RPC timeout"
-TRACE[10-01|11:24:57.859] Too many findnode failures, dropping     id=8a080f000641843a failcount=14
-TRACE[10-01|11:24:57.859] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:24:57.859] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:01.299] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:01.299] << PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:01.340] << PONG/v4                               addr=172.19.0.200:30301 err="unsolicited reply"
-TRACE[10-01|11:25:01.357] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:01.857] Findnode failed                          id=8a080f000641843a failcount=15 err="RPC timeout"
-TRACE[10-01|11:25:01.857] Too many findnode failures, dropping     id=8a080f000641843a failcount=15
-TRACE[10-01|11:25:01.857] Dial task done                           task="discovery lookup (1 results)"
-TRACE[10-01|11:25:01.857] Skipping dial candidate                  id=8a080f000641843a addr=172.19.0.200:30301 err="recently dialed"
-TRACE[10-01|11:25:01.857] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:02.787] << PONG/v4                               addr=172.19.0.200:30301 err="unsolicited reply"
-TRACE[10-01|11:25:02.826] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:02.826] << PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:05.357] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:05.381] << PONG/v4                               addr=172.19.0.200:30301 err="unsolicited reply"
-TRACE[10-01|11:25:05.405] >> PONG/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:05.405] << PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:05.857] Findnode failed                          id=8a080f000641843a failcount=16 err="RPC timeout"
-TRACE[10-01|11:25:05.857] Too many findnode failures, dropping     id=8a080f000641843a failcount=16
-TRACE[10-01|11:25:05.857] Dial task done                           task="discovery lookup (1 results)"
-TRACE[10-01|11:25:05.857] Skipping dial candidate                  id=8a080f000641843a addr=172.19.0.200:30301 err="recently dialed"
-TRACE[10-01|11:25:05.857] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:09.361] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=12.361179685s
-TRACE[10-01|11:25:09.361] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:09.861] Findnode failed                          id=8a080f000641843a failcount=17 err="RPC timeout"
-TRACE[10-01|11:25:09.861] Too many findnode failures, dropping     id=8a080f000641843a failcount=17
-TRACE[10-01|11:25:09.861] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:09.861] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:13.360] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=16.360901381s
-TRACE[10-01|11:25:13.361] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:13.861] Findnode failed                          id=8a080f000641843a failcount=18 err="RPC timeout"
-TRACE[10-01|11:25:13.861] Too many findnode failures, dropping     id=8a080f000641843a failcount=18
-TRACE[10-01|11:25:13.861] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:13.861] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:14.726] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
-DEBUG[10-01|11:25:17.360] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=20.360265501s
-TRACE[10-01|11:25:17.360] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:17.860] Findnode failed                          id=8a080f000641843a failcount=19 err="RPC timeout"
-TRACE[10-01|11:25:17.860] Too many findnode failures, dropping     id=8a080f000641843a failcount=19
-TRACE[10-01|11:25:17.860] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:17.860] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:21.360] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=24.360543836s
-TRACE[10-01|11:25:21.361] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:21.861] Findnode failed                          id=8a080f000641843a failcount=20 err="RPC timeout"
-TRACE[10-01|11:25:21.861] Too many findnode failures, dropping     id=8a080f000641843a failcount=20
-TRACE[10-01|11:25:21.861] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:21.861] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:22.411] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
-DEBUG[10-01|11:25:25.360] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=28.360552007s
-TRACE[10-01|11:25:25.361] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:25.402] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:25.860] Findnode failed                          id=8a080f000641843a failcount=21 err="RPC timeout"
-TRACE[10-01|11:25:25.861] Too many findnode failures, dropping     id=8a080f000641843a failcount=21
-TRACE[10-01|11:25:25.861] >> PING/v4                               addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:26.862] >> FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:27.362] Findnode failed                          id=cdb9461bcdbcff2c failcount=1  err="RPC timeout"
-TRACE[10-01|11:25:27.363] >> PING/v4                               addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:28.363] >> FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:28.864] Findnode failed                          id=cdb9461bcdbcff2c failcount=2  err="RPC timeout"
-TRACE[10-01|11:25:28.864] >> PING/v4                               addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:29.343] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
-TRACE[10-01|11:25:29.869] >> FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:30.369] Findnode failed                          id=cdb9461bcdbcff2c failcount=3  err="RPC timeout"
-TRACE[10-01|11:25:30.369] >> PING/v4                               addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:31.370] >> FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:31.870] Findnode failed                          id=cdb9461bcdbcff2c failcount=4  err="RPC timeout"
-TRACE[10-01|11:25:31.871] >> PING/v4                               addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:32.872] >> FINDNODE/v4                           addr=172.19.0.101:30303 err=nil
-TRACE[10-01|11:25:33.355] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
-TRACE[10-01|11:25:33.372] Findnode failed                          id=cdb9461bcdbcff2c failcount=5  err="RPC timeout"
-TRACE[10-01|11:25:33.372] Too many findnode failures, dropping     id=cdb9461bcdbcff2c failcount=5
-TRACE[10-01|11:25:33.372] Dial task done                           task="discovery lookup (1 results)"
-TRACE[10-01|11:25:33.372] New dial task                            task="dyndial cdb9461bcdbcff2c 172.19.0.101:30303"
-TRACE[10-01|11:25:33.372] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:33.375] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=36.375586613s
-TRACE[10-01|11:25:33.376] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:33.651] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:33.876] Findnode failed                          id=8a080f000641843a failcount=22 err="RPC timeout"
-TRACE[10-01|11:25:33.876] Too many findnode failures, dropping     id=8a080f000641843a failcount=22
-TRACE[10-01|11:25:33.876] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:33.876] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:34.152] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-DEBUG[10-01|11:25:34.726] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
-TRACE[10-01|11:25:36.434] Dial error                               task="dyndial cdb9461bcdbcff2c 172.19.0.101:30303" err="dial tcp 172.19.0.101:30303: connect: no route to host"
-TRACE[10-01|11:25:36.434] Dial task done                           task="dyndial cdb9461bcdbcff2c 172.19.0.101:30303"
-DEBUG[10-01|11:25:37.375] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=40.375596718s
-TRACE[10-01|11:25:37.376] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:37.421] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:37.876] Findnode failed                          id=8a080f000641843a failcount=23 err="RPC timeout"
-TRACE[10-01|11:25:37.876] Too many findnode failures, dropping     id=8a080f000641843a failcount=23
-TRACE[10-01|11:25:37.876] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:37.876] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:41.345] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
-DEBUG[10-01|11:25:41.375] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=44.375959735s
-TRACE[10-01|11:25:41.376] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:41.565] >> PING/v4                               addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:41.876] Findnode failed                          id=8a080f000641843a failcount=24 err="RPC timeout"
-TRACE[10-01|11:25:41.876] Too many findnode failures, dropping     id=8a080f000641843a failcount=24
-TRACE[10-01|11:25:41.876] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:41.876] New dial task                            task="discovery lookup"
-TRACE[10-01|11:25:42.065] Removed dead node                        b=15 id=8a080f000641843a ip=172.19.0.200
-TRACE[10-01|11:25:45.281] << NEIGHBORS/v4                          addr=172.19.0.200:30301 err="unsolicited reply"
-DEBUG[10-01|11:25:45.376] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=48.376672046s
-TRACE[10-01|11:25:45.377] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:45.877] Findnode failed                          id=8a080f000641843a failcount=25 err="RPC timeout"
-TRACE[10-01|11:25:45.877] Too many findnode failures, dropping     id=8a080f000641843a failcount=25
-TRACE[10-01|11:25:45.877] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:45.877] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:49.376] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=52.376450176s
-TRACE[10-01|11:25:49.376] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:49.876] Findnode failed                          id=8a080f000641843a failcount=26 err="RPC timeout"
-TRACE[10-01|11:25:49.876] Too many findnode failures, dropping     id=8a080f000641843a failcount=26
-TRACE[10-01|11:25:49.877] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:49.877] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:53.376] Found seed node in database              id=8a080f000641843a addr=172.19.0.200:30301 age=56.376410338s
-TRACE[10-01|11:25:53.376] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
-TRACE[10-01|11:25:53.876] Findnode failed                          id=8a080f000641843a failcount=27 err="RPC timeout"
-TRACE[10-01|11:25:53.876] Too many findnode failures, dropping     id=8a080f000641843a failcount=27
-TRACE[10-01|11:25:53.876] Dial task done                           task="discovery lookup"
-TRACE[10-01|11:25:53.876] New dial task                            task="discovery lookup"
-DEBUG[10-01|11:25:54.727] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-09|14:42:22.183] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [10-09|14:42:22.184] Allocated cache and file handles         database=/workspace/node3/geth/chaindata cache=16 handles=16
+INFO [10-09|14:42:22.204] Writing custom genesis block 
+INFO [10-09|14:42:22.204] Persisted trie from memory database      nodes=3 size=413.00B time=37.489µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-09|14:42:22.204] Successfully wrote genesis state         database=chaindata                       hash=9f1e21…12b57d
+INFO [10-09|14:42:22.204] Allocated cache and file handles         database=/workspace/node3/geth/lightchaindata cache=16 handles=16
+INFO [10-09|14:42:22.230] Writing custom genesis block 
+INFO [10-09|14:42:22.230] Persisted trie from memory database      nodes=3 size=413.00B time=43.5µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-09|14:42:22.230] Successfully wrote genesis state         database=lightchaindata                       hash=9f1e21…12b57d
+DEBUG[10-09|14:42:22.264] Sanitizing Go's GC trigger               percent=100
+INFO [10-09|14:42:22.264] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[10-09|14:42:22.265] FS scan times                            list=41.578µs set=443ns diff=598ns
+TRACE[10-09|14:42:22.265] Started watching keystore folder         path=/workspace/node3/keystore
+INFO [10-09|14:42:22.265] Starting peer-to-peer node               instance=Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10.1
+INFO [10-09|14:42:22.265] Allocated cache and file handles         database=/workspace/node3/geth/chaindata cache=768 handles=1024
+INFO [10-09|14:42:22.298] Initialised chain configuration          config="{ChainID: 1234 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil> Engine: unknown}"
+INFO [10-09|14:42:22.298] Disk storage enabled for ethash caches   dir=/workspace/node3/geth/ethash count=3
+INFO [10-09|14:42:22.298] Disk storage enabled for ethash DAGs     dir=/root/.ethash                count=2
+INFO [10-09|14:42:22.298] Initialising Ethereum protocol           versions="[63 62]" network=1234
+INFO [10-09|14:42:22.299] Loaded most recent local header          number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo3w
+INFO [10-09|14:42:22.299] Loaded most recent local full block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo3w
+INFO [10-09|14:42:22.299] Loaded most recent local fast block      number=0 hash=9f1e21…12b57d td=1000000 age=49y5mo3w
+DEBUG[10-09|14:42:22.299] Reinjecting stale transactions           count=0
+INFO [10-09|14:42:22.299] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[10-09|14:42:22.299] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [10-09|14:42:22.299] Starting P2P networking 
+DEBUG[10-09|14:42:24.399] Couldn't add port mapping                proto=udp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+DEBUG[10-09|14:42:24.424] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m24.424633576s
+INFO [10-09|14:42:24.424] UDP listener up                          self=enode://0cb09f514f963c8340698999c9015bbe01f963af9181ddbf294c1407e1c6c420d56f517c850f76823d50944bf459837c4b3f53e04a8845a21e88266a2b477b78@[::]:30303
+TRACE[10-09|14:42:24.424] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:24.424] InProc registered                        service=&{node:0xc42014fb80} namespace=admin
+DEBUG[10-09|14:42:24.424] InProc registered                        service=&{node:0xc42014fb80} namespace=admin
+DEBUG[10-09|14:42:24.424] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m24.424935635s
+DEBUG[10-09|14:42:24.424] Couldn't add port mapping                proto=tcp extport=30303 intport=30303 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+TRACE[10-09|14:42:24.425] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+INFO [10-09|14:42:24.424] RLPx listener up                         self=enode://0cb09f514f963c8340698999c9015bbe01f963af9181ddbf294c1407e1c6c420d56f517c850f76823d50944bf459837c4b3f53e04a8845a21e88266a2b477b78@[::]:30303
+DEBUG[10-09|14:42:24.425] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[10-09|14:42:24.425] InProc registered                        service=&{node:0xc42014fb80}                                                 namespace=debug
+DEBUG[10-09|14:42:24.425] InProc registered                        service=&{stack:0xc42014fb80}                                                namespace=web3
+DEBUG[10-09|14:42:24.425] InProc registered                        service=&{b:0xc4203c36f0}                                                    namespace=eth
+TRACE[10-09|14:42:24.425] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{b:0xc4203c36f0}                                                    namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{b:0xc4203c36f0 nonceLock:0xc4201e2700}"                           namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{b:0xc4203c36f0}                                                    namespace=txpool
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{b:0xc4203c36f0}                                                    namespace=debug
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{b:0xc4203c36f0}                                                    namespace=debug
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{am:0xc420247520}                                                   namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{am:0xc420247520 nonceLock:0xc4201e2700 b:0xc4203c36f0}"           namespace=personal
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{ethash:0xc420308700}                                               namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{ethash:0xc420308700}                                               namespace=ethash
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{e:0xc4203088c0}                                                    namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{e:0xc4203088c0}                                                    namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{d:0xc420270340 mux:0xc4202e79b0 installSyncSubscription:0xc4203a4720 uninstallSyncSubscription:0xc4203a4780}" namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{e:0xc4203088c0}                                                                                                namespace=miner
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{backend:0xc4203c36f0 mux:0xc4202e79b0 quit:<nil> chainDb:0xc4202f1080 events:0xc4200cf220 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{eth:0xc4203088c0}                                                                                                                     namespace=admin
+DEBUG[10-09|14:42:24.426] InProc registered                        service=&{eth:0xc4203088c0}                                                                                                                     namespace=debug
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{config:0xc42023e080 eth:0xc4203088c0}"                                                                                               namespace=debug
+DEBUG[10-09|14:42:24.426] InProc registered                        service="&{net:0xc42036c000 networkVersion:1234}"                                                                                               namespace=net
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=admin
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=admin
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=web3
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=txpool
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=personal
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=ethash
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=miner
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=eth
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=admin
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=debug
+DEBUG[10-09|14:42:24.426] IPC registered                           namespace=net
+INFO [10-09|14:42:24.427] IPC endpoint opened                      url=/workspace/node3/geth.ipc
+TRACE[10-09|14:42:25.425] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:25.425] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:25.925] Findnode failed                          id=a3dc6a456a399bc2 failcount=1 err="RPC timeout"
+TRACE[10-09|14:42:25.925] Dial task done                           task="discovery lookup (1 results)"
+TRACE[10-09|14:42:25.925] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:42:25.925] New dial task                            task="discovery lookup"
+TRACE[10-09|14:42:25.925] Findnode failed                          id=a3dc6a456a399bc2 failcount=1 err="RPC timeout"
+TRACE[10-09|14:42:25.926] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:26.926] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:27.031] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:27.426] Findnode failed                          id=a3dc6a456a399bc2 failcount=2 err="RPC timeout"
+TRACE[10-09|14:42:27.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:42:27.532] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:42:28.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:28.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=3 err="RPC timeout"
+TRACE[10-09|14:42:28.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:28.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:32.425] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m32.425578509s
+TRACE[10-09|14:42:32.425] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:33.426] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:33.926] Findnode failed                          id=a3dc6a456a399bc2 failcount=4 err="RPC timeout"
+TRACE[10-09|14:42:33.926] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:34.191] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:42:34.691] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:42:34.927] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:35.427] Findnode failed                          id=a3dc6a456a399bc2 failcount=5 err="RPC timeout"
+TRACE[10-09|14:42:35.427] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=5
+TRACE[10-09|14:42:35.427] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:35.427] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:36.425] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m36.425777932s
+TRACE[10-09|14:42:36.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:37.426] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:37.926] Findnode failed                          id=a3dc6a456a399bc2 failcount=6 err="RPC timeout"
+TRACE[10-09|14:42:37.926] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=6
+TRACE[10-09|14:42:37.926] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:37.926] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:40.425] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m40.425984535s
+TRACE[10-09|14:42:40.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:40.926] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:42:40.926] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:42:40.926] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:42:41.426] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:41.926] Findnode failed                          id=a3dc6a456a399bc2 failcount=7 err="RPC timeout"
+TRACE[10-09|14:42:41.926] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=7
+TRACE[10-09|14:42:41.926] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:41.926] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:42.299] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:42:44.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m44.426114486s
+TRACE[10-09|14:42:44.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:45.426] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:45.926] Findnode failed                          id=a3dc6a456a399bc2 failcount=8 err="RPC timeout"
+TRACE[10-09|14:42:45.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=8
+TRACE[10-09|14:42:45.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:45.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:42:45.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:48.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m48.426254519s
+TRACE[10-09|14:42:48.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:48.731] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:42:49.232] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:42:49.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:49.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=9 err="RPC timeout"
+TRACE[10-09|14:42:49.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=9
+TRACE[10-09|14:42:49.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:49.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:42:49.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:52.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m52.426412732s
+TRACE[10-09|14:42:52.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:53.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:53.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=10 err="RPC timeout"
+TRACE[10-09|14:42:53.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=10
+TRACE[10-09|14:42:53.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:53.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:42:53.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:42:56.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h42m56.426578687s
+TRACE[10-09|14:42:56.426] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:56.526] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:42:57.026] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:42:57.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:42:57.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=11 err="RPC timeout"
+TRACE[10-09|14:42:57.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=11
+TRACE[10-09|14:42:57.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:42:57.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:42:57.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:00.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m0.426740651s
+TRACE[10-09|14:43:00.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:01.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:01.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=12 err="RPC timeout"
+TRACE[10-09|14:43:01.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=12
+TRACE[10-09|14:43:01.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:01.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:01.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:02.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:43:04.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m4.426951434s
+TRACE[10-09|14:43:04.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:05.084] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:05.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:43:05.584] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:43:05.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=13 err="RPC timeout"
+TRACE[10-09|14:43:05.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=13
+TRACE[10-09|14:43:05.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:05.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:05.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:08.426] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m8.427020583s
+TRACE[10-09|14:43:08.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:09.427] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:09.927] Findnode failed                          id=a3dc6a456a399bc2 failcount=14 err="RPC timeout"
+TRACE[10-09|14:43:09.927] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=14
+TRACE[10-09|14:43:09.927] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:09.927] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:09.927] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:12.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m12.42720602s
+TRACE[10-09|14:43:12.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:13.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:13.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=15 err="RPC timeout"
+TRACE[10-09|14:43:13.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=15
+TRACE[10-09|14:43:13.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:13.928] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:43:13.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:16.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m16.427315925s
+TRACE[10-09|14:43:16.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:17.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:17.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=16 err="RPC timeout"
+TRACE[10-09|14:43:17.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=16
+TRACE[10-09|14:43:17.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:17.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:43:17.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:20.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m20.427452023s
+TRACE[10-09|14:43:20.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:21.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:21.942] Findnode failed                          id=a3dc6a456a399bc2 failcount=17 err="RPC timeout"
+TRACE[10-09|14:43:21.942] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=17
+TRACE[10-09|14:43:21.942] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:21.942] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:43:21.942] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:22.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:43:24.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m24.427608045s
+TRACE[10-09|14:43:24.427] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:25.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:25.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=18 err="RPC timeout"
+TRACE[10-09|14:43:25.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=18
+TRACE[10-09|14:43:25.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:25.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:43:25.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:28.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m28.42775466s
+TRACE[10-09|14:43:28.428] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:28.928] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:43:28.928] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:43:28.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:28.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:29.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:29.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=19 err="RPC timeout"
+TRACE[10-09|14:43:29.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=19
+TRACE[10-09|14:43:29.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:29.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:29.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:32.427] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m32.427906136s
+TRACE[10-09|14:43:32.428] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:33.402] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:33.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:43:33.902] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:43:33.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=20 err="RPC timeout"
+TRACE[10-09|14:43:33.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=20
+TRACE[10-09|14:43:33.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:33.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:33.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:36.428] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m36.42805392s
+TRACE[10-09|14:43:36.428] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:37.428] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:37.928] Findnode failed                          id=a3dc6a456a399bc2 failcount=21 err="RPC timeout"
+TRACE[10-09|14:43:37.928] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=21
+TRACE[10-09|14:43:37.928] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:37.928] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:37.928] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:40.430] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m40.430562877s
+TRACE[10-09|14:43:40.430] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:41.431] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:41.931] Findnode failed                          id=a3dc6a456a399bc2 failcount=22 err="RPC timeout"
+TRACE[10-09|14:43:41.931] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=22
+TRACE[10-09|14:43:41.931] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:41.931] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:41.931] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:42.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:43:44.430] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m44.430800126s
+TRACE[10-09|14:43:44.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:44.520] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:43:45.020] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:43:45.431] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:45.931] Findnode failed                          id=a3dc6a456a399bc2 failcount=23 err="RPC timeout"
+TRACE[10-09|14:43:45.931] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=23
+TRACE[10-09|14:43:45.931] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:45.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:45.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:48.430] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m48.430842481s
+TRACE[10-09|14:43:48.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:49.431] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:49.931] Findnode failed                          id=a3dc6a456a399bc2 failcount=24 err="RPC timeout"
+TRACE[10-09|14:43:49.931] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=24
+TRACE[10-09|14:43:49.931] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:49.931] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:49.931] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:52.430] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m52.430958438s
+TRACE[10-09|14:43:52.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:53.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:53.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=25 err="RPC timeout"
+TRACE[10-09|14:43:53.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=25
+TRACE[10-09|14:43:53.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:53.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:53.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:43:56.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h43m56.431094089s
+TRACE[10-09|14:43:56.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:57.431] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:43:57.931] Findnode failed                          id=a3dc6a456a399bc2 failcount=26 err="RPC timeout"
+TRACE[10-09|14:43:57.931] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=26
+TRACE[10-09|14:43:57.931] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:43:57.931] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:43:57.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:00.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m0.431234851s
+TRACE[10-09|14:44:00.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:01.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:01.675] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:01.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=27 err="RPC timeout"
+TRACE[10-09|14:44:01.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=27
+TRACE[10-09|14:44:01.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:01.932] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:44:01.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:02.175] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+DEBUG[10-09|14:44:02.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:44:04.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m4.431393901s
+TRACE[10-09|14:44:04.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:05.314] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:05.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:44:05.815] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:44:05.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=28 err="RPC timeout"
+TRACE[10-09|14:44:05.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=28
+TRACE[10-09|14:44:05.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:05.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:44:05.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:08.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m8.43155545s
+TRACE[10-09|14:44:08.431] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:08.938] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:09.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:44:09.438] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:44:09.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=29 err="RPC timeout"
+TRACE[10-09|14:44:09.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=29
+TRACE[10-09|14:44:09.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:09.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:44:09.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:12.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m12.431673976s
+TRACE[10-09|14:44:12.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:13.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:13.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=30 err="RPC timeout"
+TRACE[10-09|14:44:13.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=30
+TRACE[10-09|14:44:13.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:13.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:44:13.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:16.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m16.431801403s
+TRACE[10-09|14:44:16.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:16.932] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:44:16.932] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:44:16.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:16.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:17.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:17.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=31 err="RPC timeout"
+TRACE[10-09|14:44:17.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=31
+TRACE[10-09|14:44:17.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:17.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:17.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:20.431] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m20.43197545s
+TRACE[10-09|14:44:20.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:20.804] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:44:21.304] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:44:21.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:21.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=32 err="RPC timeout"
+TRACE[10-09|14:44:21.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=32
+TRACE[10-09|14:44:21.932] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:21.932] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:21.932] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:22.301] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:44:24.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m24.432077682s
+TRACE[10-09|14:44:24.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:25.432] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:25.932] Findnode failed                          id=a3dc6a456a399bc2 failcount=33 err="RPC timeout"
+TRACE[10-09|14:44:25.932] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=33
+TRACE[10-09|14:44:25.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:25.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:25.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:28.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m28.432223135s
+TRACE[10-09|14:44:28.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:29.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:29.784] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:29.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=34 err="RPC timeout"
+TRACE[10-09|14:44:29.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=34
+TRACE[10-09|14:44:29.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:29.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:29.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:30.284] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+DEBUG[10-09|14:44:32.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m32.43226605s
+TRACE[10-09|14:44:32.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:33.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:33.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=35 err="RPC timeout"
+TRACE[10-09|14:44:33.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=35
+TRACE[10-09|14:44:33.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:33.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:33.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:36.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m36.432500702s
+TRACE[10-09|14:44:36.432] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:37.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:37.517] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:37.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=36 err="RPC timeout"
+TRACE[10-09|14:44:37.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=36
+TRACE[10-09|14:44:37.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:37.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:37.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:38.017] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+DEBUG[10-09|14:44:40.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m40.432685499s
+TRACE[10-09|14:44:40.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:41.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:41.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=37 err="RPC timeout"
+TRACE[10-09|14:44:41.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=37
+TRACE[10-09|14:44:41.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:41.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:41.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:42.301] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:44:44.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m44.43282421s
+TRACE[10-09|14:44:44.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:45.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:45.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=38 err="RPC timeout"
+TRACE[10-09|14:44:45.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=38
+TRACE[10-09|14:44:45.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:45.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:44:45.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:48.432] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m48.432925544s
+TRACE[10-09|14:44:48.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:49.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:49.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=39 err="RPC timeout"
+TRACE[10-09|14:44:49.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=39
+TRACE[10-09|14:44:49.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:49.933] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:44:49.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:52.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m52.433076382s
+TRACE[10-09|14:44:52.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:53.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:53.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=40 err="RPC timeout"
+TRACE[10-09|14:44:53.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=40
+TRACE[10-09|14:44:53.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:53.933] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:44:53.933] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:44:56.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h44m56.433125932s
+TRACE[10-09|14:44:56.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:57.433] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:44:57.933] Findnode failed                          id=a3dc6a456a399bc2 failcount=41 err="RPC timeout"
+TRACE[10-09|14:44:57.933] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=41
+TRACE[10-09|14:44:57.933] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:44:57.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:44:57.934] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:00.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m0.433375277s
+TRACE[10-09|14:45:00.433] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:01.434] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:01.934] Findnode failed                          id=a3dc6a456a399bc2 failcount=42 err="RPC timeout"
+TRACE[10-09|14:45:01.934] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=42
+TRACE[10-09|14:45:01.934] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:01.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:45:01.934] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:02.301] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:45:04.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m4.433528702s
+TRACE[10-09|14:45:04.434] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:04.934] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:45:04.934] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:45:04.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:04.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:04.975] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:05.434] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:45:05.475] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:45:05.934] Findnode failed                          id=a3dc6a456a399bc2 failcount=43 err="RPC timeout"
+TRACE[10-09|14:45:05.934] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=43
+TRACE[10-09|14:45:05.934] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:05.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:05.934] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:08.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m8.433727252s
+TRACE[10-09|14:45:08.434] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:09.434] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:09.934] Findnode failed                          id=a3dc6a456a399bc2 failcount=44 err="RPC timeout"
+TRACE[10-09|14:45:09.934] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=44
+TRACE[10-09|14:45:09.934] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:09.934] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:09.934] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:12.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m12.433856946s
+TRACE[10-09|14:45:12.434] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:13.437] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:13.937] Findnode failed                          id=a3dc6a456a399bc2 failcount=45 err="RPC timeout"
+TRACE[10-09|14:45:13.937] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=45
+TRACE[10-09|14:45:13.937] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:13.937] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:13.937] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:16.433] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m16.434001909s
+TRACE[10-09|14:45:16.434] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:17.161] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:17.434] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:45:17.661] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:45:17.934] Findnode failed                          id=a3dc6a456a399bc2 failcount=46 err="RPC timeout"
+TRACE[10-09|14:45:17.934] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=46
+TRACE[10-09|14:45:17.935] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:17.935] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:17.935] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:20.434] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m20.434500281s
+TRACE[10-09|14:45:20.434] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:21.435] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:21.935] Findnode failed                          id=a3dc6a456a399bc2 failcount=47 err="RPC timeout"
+TRACE[10-09|14:45:21.935] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=47
+TRACE[10-09|14:45:21.935] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:21.935] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:21.935] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:22.301] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:45:24.434] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m24.434649732s
+TRACE[10-09|14:45:24.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:25.114] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:25.435] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:45:25.614] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:45:25.935] Findnode failed                          id=a3dc6a456a399bc2 failcount=48 err="RPC timeout"
+TRACE[10-09|14:45:25.935] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=48
+TRACE[10-09|14:45:25.935] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:25.935] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:25.935] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:28.434] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m28.434857304s
+TRACE[10-09|14:45:28.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:29.435] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:29.935] Findnode failed                          id=a3dc6a456a399bc2 failcount=49 err="RPC timeout"
+TRACE[10-09|14:45:29.935] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=49
+TRACE[10-09|14:45:29.935] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:29.935] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:29.935] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:32.434] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m32.435017043s
+TRACE[10-09|14:45:32.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:33.435] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:33.935] Findnode failed                          id=a3dc6a456a399bc2 failcount=50 err="RPC timeout"
+TRACE[10-09|14:45:33.935] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=50
+TRACE[10-09|14:45:33.935] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:33.935] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:33.935] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:36.435] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m36.435075321s
+TRACE[10-09|14:45:36.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:37.435] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:37.935] Findnode failed                          id=a3dc6a456a399bc2 failcount=51 err="RPC timeout"
+TRACE[10-09|14:45:37.935] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=51
+TRACE[10-09|14:45:37.936] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:37.936] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:45:37.936] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:40.435] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m40.435289717s
+TRACE[10-09|14:45:40.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:41.436] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:41.521] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:41.936] Findnode failed                          id=a3dc6a456a399bc2 failcount=52 err="RPC timeout"
+TRACE[10-09|14:45:41.936] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=52
+TRACE[10-09|14:45:41.936] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:41.936] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:45:41.936] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:42.021] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+DEBUG[10-09|14:45:42.302] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:45:44.435] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m44.435431362s
+TRACE[10-09|14:45:44.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:45.436] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:45.936] Findnode failed                          id=a3dc6a456a399bc2 failcount=53 err="RPC timeout"
+TRACE[10-09|14:45:45.936] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=53
+TRACE[10-09|14:45:45.936] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:45.936] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:45:45.936] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:48.435] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m48.435449023s
+TRACE[10-09|14:45:48.435] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:49.436] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:49.936] Findnode failed                          id=a3dc6a456a399bc2 failcount=54 err="RPC timeout"
+TRACE[10-09|14:45:49.936] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=54
+TRACE[10-09|14:45:49.936] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:49.936] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:45:49.936] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:52.455] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m52.455805026s
+TRACE[10-09|14:45:52.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:52.936] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:45:52.936] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:45:52.936] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:52.936] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:53.456] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:53.956] Findnode failed                          id=a3dc6a456a399bc2 failcount=55 err="RPC timeout"
+TRACE[10-09|14:45:53.956] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=55
+TRACE[10-09|14:45:53.956] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:53.956] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:53.956] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:45:56.455] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h45m56.455982593s
+TRACE[10-09|14:45:56.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:57.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:45:57.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=56 err="RPC timeout"
+TRACE[10-09|14:45:57.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=56
+TRACE[10-09|14:45:57.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:45:57.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:45:57.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:00.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m0.456151708s
+TRACE[10-09|14:46:00.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:01.456] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:01.956] Findnode failed                          id=a3dc6a456a399bc2 failcount=57 err="RPC timeout"
+TRACE[10-09|14:46:01.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=57
+TRACE[10-09|14:46:01.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:01.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:01.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:02.302] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:46:04.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m4.456247748s
+TRACE[10-09|14:46:04.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:05.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:05.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=58 err="RPC timeout"
+TRACE[10-09|14:46:05.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=58
+TRACE[10-09|14:46:05.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:05.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:05.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:08.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m8.456295349s
+TRACE[10-09|14:46:08.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:09.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:09.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=59 err="RPC timeout"
+TRACE[10-09|14:46:09.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=59
+TRACE[10-09|14:46:09.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:09.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:09.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:12.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m12.456514182s
+TRACE[10-09|14:46:12.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:13.369] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:13.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:46:13.869] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:46:13.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=60 err="RPC timeout"
+TRACE[10-09|14:46:13.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=60
+TRACE[10-09|14:46:13.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:13.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:13.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:16.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m16.456678138s
+TRACE[10-09|14:46:16.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:17.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:17.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=61 err="RPC timeout"
+TRACE[10-09|14:46:17.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=61
+TRACE[10-09|14:46:17.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:17.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:17.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:20.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m20.456832607s
+TRACE[10-09|14:46:20.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:21.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:21.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=62 err="RPC timeout"
+TRACE[10-09|14:46:21.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=62
+TRACE[10-09|14:46:21.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:21.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:21.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:22.302] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:46:24.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m24.456977806s
+TRACE[10-09|14:46:24.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:25.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:25.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=63 err="RPC timeout"
+TRACE[10-09|14:46:25.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=63
+TRACE[10-09|14:46:25.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:25.957] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:46:25.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:28.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m28.457147134s
+TRACE[10-09|14:46:28.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:29.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:29.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=64 err="RPC timeout"
+TRACE[10-09|14:46:29.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=64
+TRACE[10-09|14:46:29.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:29.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:46:29.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:32.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m32.457310202s
+TRACE[10-09|14:46:32.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:33.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:33.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=65 err="RPC timeout"
+TRACE[10-09|14:46:33.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=65
+TRACE[10-09|14:46:33.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:33.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:46:33.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:36.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m36.456434576s
+TRACE[10-09|14:46:36.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:37.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:37.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=66 err="RPC timeout"
+TRACE[10-09|14:46:37.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=66
+TRACE[10-09|14:46:37.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:37.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:46:37.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:40.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m40.457392275s
+TRACE[10-09|14:46:40.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:40.958] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:46:40.958] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:46:40.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:40.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:41.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:41.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=67 err="RPC timeout"
+TRACE[10-09|14:46:41.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=67
+TRACE[10-09|14:46:41.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:41.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:41.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:42.302] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:46:44.456] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m44.45664253s
+TRACE[10-09|14:46:44.456] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:44.988] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:45.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:46:45.488] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:46:45.957] Findnode failed                          id=a3dc6a456a399bc2 failcount=68 err="RPC timeout"
+TRACE[10-09|14:46:45.957] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=68
+TRACE[10-09|14:46:45.957] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:45.957] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:45.957] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:48.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m48.45775052s
+TRACE[10-09|14:46:48.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:49.335] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:49.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:46:49.835] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:46:49.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=69 err="RPC timeout"
+TRACE[10-09|14:46:49.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=69
+TRACE[10-09|14:46:49.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:49.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:49.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:52.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m52.45787199s
+TRACE[10-09|14:46:52.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:53.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:53.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=70 err="RPC timeout"
+TRACE[10-09|14:46:53.960] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=70
+TRACE[10-09|14:46:53.960] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:53.960] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:53.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:46:56.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h46m56.45800157s
+TRACE[10-09|14:46:56.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:57.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:46:57.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=71 err="RPC timeout"
+TRACE[10-09|14:46:57.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=71
+TRACE[10-09|14:46:57.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:46:57.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:46:57.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:00.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m0.458203379s
+TRACE[10-09|14:47:00.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:01.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:01.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=72 err="RPC timeout"
+TRACE[10-09|14:47:01.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=72
+TRACE[10-09|14:47:01.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:01.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:01.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:02.302] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:47:04.457] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m4.45734853s
+TRACE[10-09|14:47:04.457] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:05.457] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:05.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=73 err="RPC timeout"
+TRACE[10-09|14:47:05.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=73
+TRACE[10-09|14:47:05.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:05.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:05.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:08.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m8.458500056s
+TRACE[10-09|14:47:08.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:09.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:09.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=74 err="RPC timeout"
+TRACE[10-09|14:47:09.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=74
+TRACE[10-09|14:47:09.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:09.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:09.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:12.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m12.458650922s
+TRACE[10-09|14:47:12.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:13.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:13.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=75 err="RPC timeout"
+TRACE[10-09|14:47:13.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=75
+TRACE[10-09|14:47:13.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:13.959] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:47:13.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:16.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m16.458876638s
+TRACE[10-09|14:47:16.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:17.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:17.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=76 err="RPC timeout"
+TRACE[10-09|14:47:17.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=76
+TRACE[10-09|14:47:17.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:17.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:47:17.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:20.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m20.458913176s
+TRACE[10-09|14:47:20.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:21.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:21.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=77 err="RPC timeout"
+TRACE[10-09|14:47:21.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=77
+TRACE[10-09|14:47:21.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:21.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:47:21.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:22.303] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:47:24.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m24.45803594s
+TRACE[10-09|14:47:24.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:24.731] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:47:25.231] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:47:25.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:25.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=78 err="RPC timeout"
+TRACE[10-09|14:47:25.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=78
+TRACE[10-09|14:47:25.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:25.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:47:25.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:28.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m28.458127862s
+TRACE[10-09|14:47:28.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:28.482] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:28.959] Dial error                               task="dyndial a3dc6a456a399bc2 172.19.0.200:30301" err="dial tcp 172.19.0.200:30301: i/o timeout"
+TRACE[10-09|14:47:28.959] Dial task done                           task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:47:28.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:28.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+DEBUG[10-09|14:47:28.982] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:47:29.458] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:29.958] Findnode failed                          id=a3dc6a456a399bc2 failcount=79 err="RPC timeout"
+TRACE[10-09|14:47:29.958] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=79
+TRACE[10-09|14:47:29.958] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:29.958] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:29.958] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:32.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m32.458360282s
+TRACE[10-09|14:47:32.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:33.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:33.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=80 err="RPC timeout"
+TRACE[10-09|14:47:33.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=80
+TRACE[10-09|14:47:33.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:33.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:33.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:36.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m36.459493712s
+TRACE[10-09|14:47:36.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:37.331] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:37.460] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:47:37.831] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:47:37.960] Findnode failed                          id=a3dc6a456a399bc2 failcount=81 err="RPC timeout"
+TRACE[10-09|14:47:37.960] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=81
+TRACE[10-09|14:47:37.960] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:37.960] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:37.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:40.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m40.459800555s
+TRACE[10-09|14:47:40.460] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:41.460] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:41.960] Findnode failed                          id=a3dc6a456a399bc2 failcount=82 err="RPC timeout"
+TRACE[10-09|14:47:41.960] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=82
+TRACE[10-09|14:47:41.960] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:41.960] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:41.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:42.303] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:47:44.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m44.458731637s
+TRACE[10-09|14:47:44.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:45.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:45.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=83 err="RPC timeout"
+TRACE[10-09|14:47:45.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=83
+TRACE[10-09|14:47:45.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:45.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:45.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:48.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m48.458739429s
+TRACE[10-09|14:47:48.458] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:49.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:49.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=84 err="RPC timeout"
+TRACE[10-09|14:47:49.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=84
+TRACE[10-09|14:47:49.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:49.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:49.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:52.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m52.458843336s
+TRACE[10-09|14:47:52.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:53.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:53.766] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:53.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=85 err="RPC timeout"
+TRACE[10-09|14:47:53.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=85
+TRACE[10-09|14:47:53.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:53.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:53.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:47:54.266] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+DEBUG[10-09|14:47:56.458] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h47m56.458989327s
+TRACE[10-09|14:47:56.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:57.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:47:57.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=86 err="RPC timeout"
+TRACE[10-09|14:47:57.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=86
+TRACE[10-09|14:47:57.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:47:57.959] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="recently dialed"
+TRACE[10-09|14:47:57.959] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:48:00.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h48m0.459273833s
+TRACE[10-09|14:48:00.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:00.865] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+DEBUG[10-09|14:48:01.365] Removed dead node                        b=16 id=a3dc6a456a399bc2 ip=172.19.0.200
+TRACE[10-09|14:48:01.459] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:01.959] Findnode failed                          id=a3dc6a456a399bc2 failcount=87 err="RPC timeout"
+TRACE[10-09|14:48:01.959] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=87
+TRACE[10-09|14:48:01.959] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:48:01.959] New dial task                            task="dyndial a3dc6a456a399bc2 172.19.0.200:30301"
+TRACE[10-09|14:48:01.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:48:02.303] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[10-09|14:48:04.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h48m4.459620818s
+TRACE[10-09|14:48:04.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:05.460] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:05.960] Findnode failed                          id=a3dc6a456a399bc2 failcount=88 err="RPC timeout"
+TRACE[10-09|14:48:05.960] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=88
+TRACE[10-09|14:48:05.960] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:48:05.960] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:48:05.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:48:08.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h48m8.459742705s
+TRACE[10-09|14:48:08.459] >> PING/v4                               addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:09.460] >> FINDNODE/v4                           addr=172.19.0.200:30301 err=nil
+TRACE[10-09|14:48:09.960] Findnode failed                          id=a3dc6a456a399bc2 failcount=89 err="RPC timeout"
+TRACE[10-09|14:48:09.960] Too many findnode failures, dropping     id=a3dc6a456a399bc2 failcount=89
+TRACE[10-09|14:48:09.960] Dial task done                           task="discovery lookup"
+TRACE[10-09|14:48:09.960] Skipping dial candidate                  id=a3dc6a456a399bc2 addr=172.19.0.200:30301 err="already dialing"
+TRACE[10-09|14:48:09.960] New dial task                            task="discovery lookup"
+DEBUG[10-09|14:48:12.459] Found seed node in database              id=a3dc6a456a399bc2 addr=172.19.0.200:30301 age=427526h48m12.45995066s
+TRACE[10-09|14:48:12.460] >> PING/v4                               addr=172.19.0.200:30301 err=nil

@@ -1,14 +1,14 @@
 {
   "contractName": "Categorized",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820f66fd8b1d69c2cc649a7367d91bf36fa63981deb27096972ac6badffc593ca090029",
-  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820f66fd8b1d69c2cc649a7367d91bf36fa63981deb27096972ac6badffc593ca090029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a723058201de4633643ad42f37a03b3ec0327f7cadcafd4f55f7b9dbb50757773f9cafb900029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058201de4633643ad42f37a03b3ec0327f7cadcafd4f55f7b9dbb50757773f9cafb900029",
   "sourceMap": "55:1887:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;55:1887:0;;;;;;;",
   "deployedSourceMap": "55:1887:0:-;;;;;",
   "source": "pragma solidity ^0.4.17;\n\nimport \"./StringUtils.sol\";\n\ncontract Categorized {\n  function isCategoryAllowed(string category) pure internal returns(bool) {\n    if(StringUtils.equal(category, \"MobilityFeatureCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ParkingCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ParkingSpaceCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ParkingSiteCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"TransportationCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"BikeSharingStationCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"CarDiagnosticsCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"BusCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"LocationTrackingCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"PeopleDensityEstimationCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"PeopleDensityOnBusCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"PeopleMobilityWithinAreaCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"PeopleDensityInAreaCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"TrafficCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"TrafficObstacleCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"TrafficDataCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"AccidentCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ChargingCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ChargingPointCategory\")) {\n      return true;\n    }\n    if(StringUtils.equal(category, \"ChargingStationC\")) {\n      return true;\n    }\n\n    return false;\n  }\n}\n\n\n/*\nfooStruct myStruct = fooStruct(1,2);\nfooStruct myStruct = fooStruct({foo:1, fighter:2});\n\n// for temporary data - will only write to memory\nfooStruct memory myStruct;\nmyStruct.figther = 2;\n\n// for persistent data, has to be initialized from a state variable. `storage` is the default and a warning will be thrown by Solidity compiler versions starting with 4.17\nfooStruct storage myStruct = ...;\nmyStruct.fighter = 2; // will write directly to storage\n\n*/\n",
-  "sourcePath": "/home/peter/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
+  "sourcePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
   "ast": {
-    "absolutePath": "/home/peter/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
     "exportedSymbols": {
       "Categorized": [
         193
@@ -29,7 +29,7 @@
         "src": "0:24:0"
       },
       {
-        "absolutePath": "/home/peter/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
+        "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
         "file": "./StringUtils.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -2653,7 +2653,7 @@
     "src": "0:2404:0"
   },
   "legacyAST": {
-    "absolutePath": "/home/peter/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Categorized.sol",
     "exportedSymbols": {
       "Categorized": [
         193
@@ -2674,7 +2674,7 @@
         "src": "0:24:0"
       },
       {
-        "absolutePath": "/home/peter/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
+        "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
         "file": "./StringUtils.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -5303,5 +5303,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-23T10:45:17.594Z"
+  "updatedAt": "2018-10-09T14:53:48.485Z"
 }

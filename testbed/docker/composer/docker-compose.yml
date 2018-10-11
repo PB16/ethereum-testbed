@@ -9,7 +9,7 @@ services:
       - 30301
     networks:
       app_net:
-        ipv4_address: 172.19.0.200
+        ipv4_address: 172.18.0.200
     cap_add:
       - ALL
     tty: true
@@ -32,7 +32,7 @@ services:
       - 8545
     networks:
       app_net:
-        ipv4_address: 172.19.0.100
+        ipv4_address: 172.18.0.100
     volumes:
         - ${VOLUME_PATH}
     privileged: true
@@ -54,7 +54,7 @@ services:
       - 8545
     networks:
       app_net:
-        ipv4_address: 172.19.0.101
+        ipv4_address: 172.18.0.101
     volumes:
         - ${VOLUME_PATH}
     privileged: true
@@ -75,7 +75,7 @@ services:
       - 30301
     networks:
       app_net:
-        ipv4_address: 172.19.0.2
+        ipv4_address: 172.18.0.2
     volumes:
         - ${VOLUME_PATH}
     privileged: true
@@ -95,7 +95,7 @@ services:
       - 30301
     networks:
       app_net:
-        ipv4_address: 172.19.0.3
+        ipv4_address: 172.18.0.3
     volumes:
         - ${VOLUME_PATH}
     privileged: true
@@ -115,7 +115,7 @@ services:
       - 30301
     networks:
       app_net:
-        ipv4_address: 172.19.0.4
+        ipv4_address: 172.18.0.4
     volumes:
         - ${VOLUME_PATH}
     privileged: true
@@ -133,7 +133,7 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.19.0.0/24
-          gateway: 172.19.0.1
+        - subnet: 172.18.0.0/24
+          gateway: 172.18.0.1
         - subnet: 2001:3984:3989::/64
           gateway: 2001:3984:3989::/1

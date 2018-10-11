@@ -1,0 +1,28 @@
+=============== Oct 9, 2018 (UTC) ===============
+14:42:25.344148 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:42:25.351470 db@open opening
+14:42:25.351728 version@stat F·[] S·0B[] Sc·[]
+14:42:25.359976 db@janitor F·2 G·0
+14:42:25.359991 db@open done T·8.509078ms
+=============== Oct 9, 2018 (UTC) ===============
+14:42:25.424700 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:42:25.424773 version@stat F·[] S·0B[] Sc·[]
+14:42:25.424778 db@open opening
+14:42:25.424804 journal@recovery F·1
+14:42:25.426572 journal@recovery recovering @1
+14:42:25.435068 memdb@flush created L0@2 N·14 S·913B "\n0\xbb..\xa7\xb1\x8a,v4":"\xed\xced..V-\xc8,v5"
+14:42:25.437414 version@stat F·[1] S·913B[913B] Sc·[0.25]
+14:42:25.452874 db@janitor F·3 G·0
+14:42:25.452892 db@open done T·28.108775ms
+14:42:28.989934 db@close closing
+14:42:28.989988 db@close done T·52.513µs
+=============== Oct 9, 2018 (UTC) ===============
+14:42:29.042368 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:42:29.042499 version@stat F·[1] S·913B[913B] Sc·[0.25]
+14:42:29.042508 db@open opening
+14:42:29.042552 journal@recovery F·1
+14:42:29.044344 journal@recovery recovering @3
+14:42:29.049992 memdb@flush created L0@5 N·2 S·238B "Dat..ion,v16":"Las..der,v17"
+14:42:29.051816 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+14:42:29.069474 db@janitor F·4 G·0
+14:42:29.069489 db@open done T·26.975316ms
