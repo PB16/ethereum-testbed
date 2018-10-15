@@ -1,1 +1,1 @@
-geth account list --keystore workspace/miner1/keystore/ > file.txt
+geth account list --keystore workspace/miner1/keystore/ > accountKeys.txt

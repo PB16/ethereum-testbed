@@ -47,6 +47,7 @@ RUN \
 #COPY geth ../../../../usr/bin/geth
 COPY truffle ../truffle
 COPY accounts.sh ../accounts.sh
+COPY setAccount.py ../setAccount.py
 
 # Set environment variables.
 ENV HOME /root
@@ -57,3 +58,5 @@ WORKDIR /root
 # Define default command.
 CMD ["bash"]
 CMD ["chmod +x accounts.sh"]
+CMD ["./accounts.sh"]
+CMD ["python3 setAccount.py"]
