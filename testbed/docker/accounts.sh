@@ -1,0 +1,1 @@
+geth account list --keystore workspace/miner1/keystore/ > file.txt

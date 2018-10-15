@@ -34,6 +34,8 @@ RUN \
   apt-get update && \
   apt-get install -y iproute2 && \
   apt-get install -y iputils-ping && \
+  apt-get update && \
+  apt-get install python3.6 && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
@@ -44,6 +46,7 @@ RUN \
 #COPY bootnode ../../../../usr/bin/bootnode
 #COPY geth ../../../../usr/bin/geth
 COPY truffle ../truffle
+COPY accounts.sh ../accounts.sh
 
 # Set environment variables.
 ENV HOME /root
@@ -53,3 +56,4 @@ WORKDIR /root
 
 # Define default command.
 CMD ["bash"]
+CMD ["chmod +x accounts.sh"]
