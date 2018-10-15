@@ -21,6 +21,7 @@ RUN \
   apt-get install -y ethereum && \
   apt-get install nano && \
   mkdir workspace && \
+  mkdir truffle && \
   curl -sL https://deb.nodesource.com/setup_6.x && \
   apt-get install -y nodejs && \
   apt-get install -y npm && \
@@ -42,6 +43,7 @@ RUN \
 
 #COPY bootnode ../../../../usr/bin/bootnode
 #COPY geth ../../../../usr/bin/geth
+COPY truffle ../truffle
 
 # Set environment variables.
 ENV HOME /root

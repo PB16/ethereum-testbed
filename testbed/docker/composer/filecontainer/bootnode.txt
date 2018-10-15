@@ -1,1 +1,0 @@
-INFO [10-09|14:42:21.032] UDP listener up                          self=enode://8a080f000641843af0e117381feb090677ef7d674448e6d3b94f7d3fda46f3c52a727ab9113a9c5c7bf6cb09addc3e3ffbe4f8d4b55ee174d3bd683746e0d638@[::]:30301
