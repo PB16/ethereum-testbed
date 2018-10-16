@@ -13,7 +13,7 @@ with open("truffle1.js", "wt") as fileOut:
 """module.exports = {
   networks: {
       development: {
-        host: "172.18.0.100",
+        host: "localhost",
         port: 8545,
         network_id: "1234", // Match any network id
         gas: 6500000,
