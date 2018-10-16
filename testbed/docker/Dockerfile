@@ -30,7 +30,6 @@ RUN \
   n stable && \
   npm install -g express && \
   npm install -g truffle && \
-  #ln -s -f /usr/bin/nodejs /usr/bin/node && \
   apt-get update && \
   apt-get install -y iproute2 && \
   apt-get install -y iputils-ping && \
