@@ -4,15 +4,15 @@ from subprocess import call
 
 accountAddress = ""
 
-with open("accountkeys.txt", "r") as sfile:
+with open("accountKeys.txt", "r") as sfile:
   lines = sfile.readlines()
   result = re.search('{(.*)}', lines[0])
   accountAddress = "0x" + result.group(1)
 
-with open("../truffle.js", "r") as tfile:
+with open("truffle/truffle.js", "r") as tfile:
   lines = tfile.readlines()
-  result = re.search('"(.*)"', lines[10])
+  result = re.search('\"(.*)\"', lines[10])
   lines[10] = lines[10].replace(result.group(1), accountAddress)
 
-with open("../truffle.js", "w") as tfile:
+with open("truffle/truffle.js", "w") as tfile:
   tfile.writelines(lines)
