@@ -45,9 +45,9 @@ RUN \
 
 #COPY bootnode ../../../../usr/bin/bootnode
 #COPY geth ../../../../usr/bin/geth
-COPY truffle ../truffle
-COPY accounts.sh ../accounts.sh
-COPY setAccount.py ../setAccount.py
+COPY ./truffle ../truffle
+COPY ./truffle/accounts.sh ../accounts.sh
+COPY ./truffle/setAccount.py ../setAccount.py
 
 # Set environment variables.
 ENV HOME /root
