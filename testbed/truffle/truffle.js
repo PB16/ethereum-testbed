@@ -9,7 +9,7 @@ module.exports = {
       port: 8545,
       network_id: "*",
       from: "dummy_address",
-      gas: 18000000
+      gas: 7900000
     }
   }
 };

@@ -57,5 +57,3 @@ WORKDIR /root
 # Define default command.
 CMD ["bash"]
 CMD ["chmod +x accounts.sh"]
-CMD ["./accounts.sh"]
-CMD ["python3 setAccount.py"]
