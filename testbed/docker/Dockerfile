@@ -46,8 +46,9 @@ RUN \
 #COPY geth ../../../../usr/bin/geth
 COPY ./truffle ../truffle
 COPY ./truffle/accounts.sh ../../../../usr/bin/accounts.sh
-COPY ./truffle/unlockaccount.sh ../../../../usr/bin/unlockaccount.sh
+COPY ./truffle/unlock.sh ../../../../usr/bin/unlock.sh
 COPY ./truffle/setAccount.py setAccount.py
+COPY password.txt password.txt
 
 # Set environment variables.
 ENV HOME /
@@ -58,4 +59,4 @@ WORKDIR /
 # Define default command.
 CMD ["bash"]
 CMD ["chmod +x accounts.sh"]
-CMD ["chmod +x unlockaccount.sh"]
+CMD ["chmod +x unlock.sh"]

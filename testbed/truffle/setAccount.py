@@ -17,10 +17,10 @@ with open("truffle/truffle.js", "r") as tfile:
 with open("truffle/truffle.js", "w") as tfile:
   tfile.writelines(lines)
 
-#with open("unlockaccount.sh", "r") as ufile:
-#	lines = ufile.readlines()
-#	lines[0] = lines[0].replace("account", accountAddress)
-#	lines[0] = lines[0].replace("\"", "")
-#
-#with open("unlockaccount.sh", "w") as wfile:
-#	wfile.writelines(lines)
+with open("../../../../usr/bin/unlock.sh", "r") as ufile:
+	lines = ufile.readlines()
+	lines[0] = lines[0].replace("account", accountAddress)
+	lines[0] = lines[0].replace("\"", "")
+
+with open("../../../../usr/bin/unlock.sh", "w") as wfile:
+	wfile.writelines(lines)
