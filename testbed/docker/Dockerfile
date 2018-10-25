@@ -48,7 +48,7 @@ COPY ./truffle ../truffle
 COPY ./truffle/accounts.sh ../../../../usr/bin/accounts.sh
 COPY ./truffle/unlock.sh ../../../../usr/bin/unlock.sh
 COPY ./truffle/setAccount.py setAccount.py
-COPY password.txt password.txt
+COPY ./docker/password.txt password.txt
 
 # Set environment variables.
 ENV HOME /
