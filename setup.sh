@@ -1,4 +1,4 @@
-udo apt-get update && sudo apt-get -y upgrade
+sudo apt-get update && sudo apt-get -y upgrade
 
 sudo apt-get install software-properties-common
 sudo add-apt-repository -y ppa:ethereum/ethereum
