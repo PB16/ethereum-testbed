@@ -46,7 +46,6 @@ RUN \
 #COPY geth ../../../../usr/bin/geth
 COPY ./truffle ../truffle
 COPY ./truffle/accounts.sh ../../../../usr/bin/accounts.sh
-COPY ./truffle/unlock.sh ../../../../usr/bin/unlock.sh
 COPY ./truffle/setAccount.py setAccount.py
 COPY ./docker/password.txt password.txt
 
