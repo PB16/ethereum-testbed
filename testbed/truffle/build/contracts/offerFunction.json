@@ -54,9 +54,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.4.19;\n\n// not implementated contract but needed as a strutual guide for the checkExistingOffer to be able to call contract on chain\ncontract offerFunction {\n\tfunction getOffer(uint _ID) public constant returns (uint ID, address provider, string name, string category, uint price, string endpoint, bytes32[] inputs, bytes32[] outputs);\n}\n\ncontract subscription {\n\t\n\tstruct SubscriberStruct {\n    \tuint ID;\n     \taddress[] subscribers;\n    }\n\n\taddress owner;\n\tmapping (uint => SubscriberStruct) subscriptions;\n\t\n\tfunction subscription() public{\n\t\towner = msg.sender;\n\t}\n\n\tfunction CheckExistingOffer(uint _ID) public constant returns(bool){\n\t\tofferFunction func = offerFunction(0x54d9faa15b8401a9af973fbd3838f1e3c1dbb9e3);\n\t\tvar (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);\n\t\tif (ID > 0 && provider != 0x0){\n\t\t\treturn true;\n\t\t}\n\t\telse{\n\t\t\treturn false;\n\t\t} \n\t}\n\n\tfunction createSubscription(uint _ID) public returns(bool){\n\t\tif (subscriptions[_ID].ID == 0){\n\t\t\tSubscriberStruct subscriptionList;\n\t\t\taddress[] memory firstSubscriber = new address[](1);\n\t\t\tfirstSubscriber[0] = msg.sender;\n\t\t\tsubscriptionList.ID = _ID;\n\t\t\tsubscriptionList.subscribers = firstSubscriber;\n\t\t\tsubscriptions[_ID] = subscriptionList;\n\t\t}\n\t\telse{\n\t\t\tsubscriptions[_ID].subscribers.push(msg.sender);\n\t\t}\n\t\treturn true;\n\t}\n\n\tfunction returnSubscribers(uint ID) public constant returns(address[], uint){\n\t\treturn (subscriptions[ID].subscribers, subscriptions[ID].subscribers.length);\n\t}\n\n\tfunction checkSubscription(uint ID, address subscriber) public constant returns(bool){\n\t\tif (subscriptions[ID].ID != 0){\n\t\t\tfor(uint i = 0; i < subscriptions[ID].subscribers.length; i++){\n\t\t\t\tif (subscriptions[ID].subscribers[i] == subscriber){\n\t\t\t\t\treturn true;\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn false;\n\t\t}\n\t\telse{\n\t\t\treturn false;\n\t\t}\n\n\t}\n\n\tfunction GetSubscriptionIndex(uint ID, address subscriber) internal constant returns(bool, uint){\n\t\tif (subscriptions[ID].ID != 0){\n\t\t\tfor(uint i = 0; i < subscriptions[ID].subscribers.length; i++){\n\t\t\t\tif (subscriptions[ID].subscribers[i] == subscriber){\n\t\t\t\t\treturn (true, i);\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn (false, 0);\n\t\t}\n\t\telse{\n\t\t\treturn (false, 0);\n\t\t}\n\n\t}\n\n\tfunction deleteSubscription(uint ID) public returns(bool){\n\t\tvar (state, index) = GetSubscriptionIndex(ID, msg.sender);\n\t\tif (state == true){\n\t\t\tsubscriptions[ID].subscribers[index] = subscriptions[ID].subscribers[subscriptions[ID].subscribers.length -1]; \n\t\t\tdelete subscriptions[ID].subscribers[subscriptions[ID].subscribers.length -1];\n\t\t\tsubscriptions[ID].subscribers.length--;\n\t\t\treturn true;\n\t\t}\n\t\treturn false;\n\t}\n} ",
-  "sourcePath": "/home/administrator/testbed/truffle/contracts/subscription.sol",
+  "sourcePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/subscription.sol",
   "ast": {
-    "absolutePath": "/home/administrator/testbed/truffle/contracts/subscription.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/subscription.sol",
     "exportedSymbols": {
       "offerFunction": [
         4632
@@ -4599,7 +4599,7 @@
     "src": "0:2630:7"
   },
   "legacyAST": {
-    "absolutePath": "/home/administrator/testbed/truffle/contracts/subscription.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/subscription.sol",
     "exportedSymbols": {
       "offerFunction": [
         4632
@@ -9147,5 +9147,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T08:49:03.357Z"
+  "updatedAt": "2018-10-09T14:53:48.505Z"
 }

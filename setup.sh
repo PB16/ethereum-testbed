@@ -1,3 +1,4 @@
+#this script installs all neccessary software to run the testbed and also creates a new docker image.
 sudo apt-get update && sudo apt-get -y upgrade
 
 sudo apt-get install software-properties-common
@@ -15,4 +16,4 @@ sudo apt-get install docker-ce
 
 sudo apt-get install docker-compose
 
-sudo docker image build -t testbed .
+cd testbed/ && sudo docker image build -t testbed -f docker/Dockerfile .

@@ -45,12 +45,17 @@ RUN \
 #COPY bootnode ../../../../usr/bin/bootnode
 #COPY geth ../../../../usr/bin/geth
 COPY ./truffle ../truffle
+COPY ./truffle/accounts.sh ../../../../usr/bin/accounts.sh
+COPY ./truffle/setAccount.py setAccount.py
+COPY ./docker/password.txt password.txt
 
 # Set environment variables.
-ENV HOME /root
+ENV HOME /
 
 # Define working directory.
-WORKDIR /root
+WORKDIR /
 
 # Define default command.
 CMD ["bash"]
+CMD ["chmod +x accounts.sh"]
+CMD ["chmod +x unlock.sh"]

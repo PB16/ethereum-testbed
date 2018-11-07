@@ -1,14 +1,14 @@
 {
   "contractName": "Pricing",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820e23dbe5422d2123278aba294d1dcca8adfb57d458f4a34d9fbcbb5c4cb46ce120029",
-  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820e23dbe5422d2123278aba294d1dcca8adfb57d458f4a34d9fbcbb5c4cb46ce120029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820a219af10a51014ec4d39314ea63f91a04ec1d7db3e3fa88fe18f77c3df79e11c0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820a219af10a51014ec4d39314ea63f91a04ec1d7db3e3fa88fe18f77c3df79e11c0029",
   "sourceMap": "55:481:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;55:481:4;;;;;;;",
   "deployedSourceMap": "55:481:4:-;;;;;",
   "source": "pragma solidity ^0.4.17;\n\nimport \"./StringUtils.sol\";\n\ncontract Pricing {\n  function isPricingModelAllowed(string model) pure internal returns(bool) {\n    if(StringUtils.equal(model, \"FREE\")) {\n      return true;\n    }\n    if(StringUtils.equal(model, \"PER_ACCESS\")) {\n      return true;\n    }\n    if(StringUtils.equal(model, \"PER_BYTE\")) {\n      return true;\n    }\n    if(StringUtils.equal(model, \"PER_MESSAGE\")) {\n      return true;\n    }\n    if(StringUtils.equal(model, \"PER_MONTH\")) {\n      return true;\n    }\n    return false;\n  }\n}\n",
-  "sourcePath": "/home/administrator/testbed/truffle/contracts/Pricing.sol",
+  "sourcePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Pricing.sol",
   "ast": {
-    "absolutePath": "/home/administrator/testbed/truffle/contracts/Pricing.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Pricing.sol",
     "exportedSymbols": {
       "Pricing": [
         2775
@@ -29,7 +29,7 @@
         "src": "0:24:4"
       },
       {
-        "absolutePath": "/home/administrator/testbed/truffle/contracts/StringUtils.sol",
+        "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
         "file": "./StringUtils.sol",
         "id": 2719,
         "nodeType": "ImportDirective",
@@ -793,7 +793,7 @@
     "src": "0:537:4"
   },
   "legacyAST": {
-    "absolutePath": "/home/administrator/testbed/truffle/contracts/Pricing.sol",
+    "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/Pricing.sol",
     "exportedSymbols": {
       "Pricing": [
         2775
@@ -814,7 +814,7 @@
         "src": "0:24:4"
       },
       {
-        "absolutePath": "/home/administrator/testbed/truffle/contracts/StringUtils.sol",
+        "absolutePath": "/home/administrator/ethereum-testbed/testbed/truffle/contracts/StringUtils.sol",
         "file": "./StringUtils.sol",
         "id": 2719,
         "nodeType": "ImportDirective",
@@ -1583,5 +1583,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T08:49:03.343Z"
+  "updatedAt": "2018-10-09T14:53:48.498Z"
 }
