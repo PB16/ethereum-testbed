@@ -2,7 +2,6 @@
 
 The current version of the testbed is located on the master branch.
 Information about how to use it can be found in the file called "userguide-findings".
-
 Further documentation can be found in the file called "documentation_testbed".
 
 To use the testbed the following has to be installed:
