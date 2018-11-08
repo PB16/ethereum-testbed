@@ -1,15 +1,25 @@
 import pexpect
+from time import sleep
 
-geth = pexpect.spawn("geth attach ipc:/home/peter/geth_test/miner/geth.ipc")
+geth = pexpect.spawn("geth attach ipc:/home/peter/ethereum-testbed/testbed/docker/composer/filecontainer/miner1/geth.ipc")
 
 while True:
     geth.expect(">")
     
     geth.send("eth.getBalance(eth.coinbase)\r")
     
-    geth.expect("[0-9]+[0-9]+[0-9]+")
-    
-    result = geth.after.decode("utf-8")
+    #geth.expect("[0-9]+[0-9]+[0-9]+")
+    geth.expect("m(.*)\\x1b")
+
+    sleep(1)
+
+    result = str(geth.after.decode())
+    result = result.replace("m","")
+    result = result.replace("\x1b","")
+
     print(result)
-    if int(result) >= 100000000000000000000:
+
+    if result.isdigit() and int(result) >= 10000000000000000:
+    	print("migrating smart contracts!")
+    	sleep(2)
         quit()
