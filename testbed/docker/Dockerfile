@@ -58,4 +58,3 @@ WORKDIR /
 # Define default command.
 CMD ["bash"]
 CMD ["chmod +x accounts.sh"]
-CMD ["chmod +x unlock.sh"]
