@@ -13,3 +13,5 @@ sudo docker exec -it -d composer_miner1_1 /bin/bash -c "geth --datadir workspace
 
 #check all conditions for migration of smart contracts is met.
 sudo python3 ../../truffle/pexpect_test.py
+
+sudo docker exec -it -d composer_miner1_1 /bin/bash -c "cd truffle/ && truffle migrate > migrations.txt"
