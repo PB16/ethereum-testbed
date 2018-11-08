@@ -5,7 +5,7 @@ geth = pexpect.spawn("geth attach ipc:/home/peter/ethereum-testbed/testbed/docke
 
 while True:
     geth.expect(">")
-    
+
     geth.send("eth.getBalance(eth.coinbase)\r")
     
     #geth.expect("[0-9]+[0-9]+[0-9]+")
@@ -20,6 +20,6 @@ while True:
     print(result)
 
     if result.isdigit() and int(result) >= 10000000000000000:
-    	print("migrating smart contracts!")
-    	sleep(2)
+        print("migrating smart contracts!")
+        sleep(2)
         quit()
