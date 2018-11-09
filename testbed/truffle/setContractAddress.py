@@ -1,15 +1,30 @@
 import re
 
+newContractAddress = ""
+
+#extracting contract addresses from output of truffle.
 with open("migrations.txt", "r") as sfile:
 	for line in sfile:
 		line = line.replace(" ","")
 
+		if "Offer:" in line:
+			newContractAddress = line.split(':')[1]
+
+#extracting the old contract address and replaces with the contract address.
 with open("/home/peter/ethereum-testbed/testbed/geth/scripts/createTransactions.js") as tfile:
 	lines = tfile.readlines()
 
 	for line in lines:
 		if not line.lstrip().startswith("//") and "var contractAddress = \"" in line:
 			result = re.search('var contractAddress = \"(.*)\";', line.lstrip())
+			oldContractAdress = result.group(1)
+			lines = ''.join(lines)
+			lines = lines.replace(oldContractAdress, newContractAddress.strip("\n"))
+			break
+
+#saving the changes.
+with open("/home/peter/ethereum-testbed/testbed/geth/scripts/createTransactions.js","w") as tfile:
+	tfile.writelines(lines)
 
 #extracting the old ABI, so it can be replaced with the new ABI.
 lines = ''.join(lines)
