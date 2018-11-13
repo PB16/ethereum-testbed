@@ -8,7 +8,6 @@ while True:
 
     geth.send("eth.getBalance(eth.coinbase)\r")
     
-    #geth.expect("[0-9]+[0-9]+[0-9]+")
     geth.expect("m(.*)\\x1b")
 
     sleep(1)
