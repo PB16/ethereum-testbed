@@ -15,3 +15,5 @@ sudo docker exec -it composer_miner1_1 /bin/bash -c "python3 setAccount.py"
 sudo python3 ../../truffle/automatic-migration.py
 
 sudo docker exec -it -d composer_miner1_1 /bin/bash -c "cd truffle/ && truffle migrate > migrations.txt"
+
+sudo python3 ../../truffle/setContractAddress.py
