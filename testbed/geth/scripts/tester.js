@@ -1,4 +1,7 @@
 function tester() {
-  console.log("Kasper");
-  var tester1 = "Kasper";
+  console.log("start");
+  console.log("testing!");
+  console.log("still testing!");
+  console.log("finished!");
+  console.log("end");
 }
