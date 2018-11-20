@@ -45,3 +45,5 @@ with open("../geth/scripts/createTransactions.js") as tfile:
 #saving the changes.
 with open("../geth/scripts/createTransactions.js","w") as tfile:
 	tfile.writelines(lines)
+
+print("done")

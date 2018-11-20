@@ -20,7 +20,7 @@ while True:
 
     print(result)
 
-    if result.isdigit() and int(result) >= 10000000000000000:
+    if result.isdigit() and int(result) >= 100000000000000:
         print("migrating smart contracts!")
         sleep(2)
         quit()
