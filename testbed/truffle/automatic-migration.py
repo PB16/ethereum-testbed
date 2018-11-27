@@ -4,6 +4,7 @@ import os
 
 print(os.getcwd())
 geth = pexpect.spawn("geth attach ipc:filecontainer/miner1/geth.ipc")
+i = 0
 
 while True:
     geth.expect(">")
@@ -18,7 +19,8 @@ while True:
     result = result.replace("m","")
     result = result.replace("\x1b","")
 
-    print(result)
+    print(result + " [" + str(i) + "]")
+    i = i + 1
 
     if result.isdigit() and int(result) >= 100000000000000:
         print("migrating smart contracts!")

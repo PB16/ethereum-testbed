@@ -1,0 +1,481 @@
+Compiling ./contracts/Categorized.sol...
+Compiling ./contracts/DateTime.sol...
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/Offer.sol...
+Compiling ./contracts/Pricing.sol...
+Compiling ./contracts/StringUtils.sol...
+Compiling ./contracts/strings.sol...
+Compiling ./contracts/subscription.sol...
+
+Compilation warnings encountered:
+
+/truffle/contracts/Migrations.sol:11:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Migrations() public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:151:9: Warning: Use of the "var" keyword is deprecated.
+        var ret = new string(self._len);
+        ^-----^
+,/truffle/contracts/strings.sol:169:9: Warning: Use of the "var" keyword is deprecated.
+        var ptr = self._ptr - 31;
+        ^-----^
+,/truffle/contracts/strings.sol:170:9: Warning: Use of the "var" keyword is deprecated.
+        var end = ptr + self._len;
+        ^-----^
+,/truffle/contracts/strings.sol:213:9: Warning: Use of the "var" keyword is deprecated.
+        var selfptr = self._ptr;
+        ^---------^
+,/truffle/contracts/strings.sol:214:9: Warning: Use of the "var" keyword is deprecated.
+        var otherptr = other._ptr;
+        ^----------^
+,/truffle/contracts/strings.sol:225:17: Warning: Use of the "var" keyword is deprecated.
+                var diff = (a & mask) - (b & mask);
+                ^------^
+,/truffle/contracts/strings.sol:314:9: Warning: Use of the "var" keyword is deprecated.
+        var b = word / divisor;
+        ^---^
+,/truffle/contracts/strings.sol:424:9: Warning: Use of the "var" keyword is deprecated.
+        var selfptr = self._ptr + self._len - needle._len;
+        ^---------^
+,/truffle/contracts/strings.sol:452:9: Warning: Use of the "var" keyword is deprecated.
+        var selfptr = self._ptr + self._len - needle._len;
+        ^---------^
+,/truffle/contracts/strings.sol:682:9: Warning: Use of the "var" keyword is deprecated.
+        var ret = new string(self._len + other._len);
+        ^-----^
+,/truffle/contracts/strings.sol:706:9: Warning: Use of the "var" keyword is deprecated.
+        var ret = new string(length);
+        ^-----^
+,/truffle/contracts/Offer.sol:28:2: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+	function Offer() public {
+ ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/Offer.sol:77:4: Warning: Use of the "var" keyword is deprecated.
+			var temp = _inputs;
+			^------^
+,/truffle/contracts/Offer.sol:79:4: Warning: Use of the "var" keyword is deprecated.
+			var str = _inputs.toSlice();
+			^-----^
+,/truffle/contracts/Offer.sol:90:4: Warning: Use of the "var" keyword is deprecated.
+			var temp = _outputs;
+			^------^
+,/truffle/contracts/Offer.sol:92:4: Warning: Use of the "var" keyword is deprecated.
+			var str = _outputs.toSlice();
+			^-----^
+,/truffle/contracts/Offer.sol:101:8: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetIndex(ID, _input, 'input');
+		     ^---^
+,/truffle/contracts/Offer.sol:101:15: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetIndex(ID, _input, 'input');
+		            ^---^
+,/truffle/contracts/Offer.sol:113:8: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetIndex(ID, _output, 'output');
+		     ^---^
+,/truffle/contracts/Offer.sol:113:15: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetIndex(ID, _output, 'output');
+		            ^---^
+,/truffle/contracts/subscription.sol:18:2: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+	function subscription() public{
+ ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/subscription.sol:24:8: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		     ^^
+,/truffle/contracts/subscription.sol:24:12: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		         ^------^
+,/truffle/contracts/subscription.sol:24:22: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                   ^--^
+,/truffle/contracts/subscription.sol:24:28: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                         ^------^
+,/truffle/contracts/subscription.sol:24:38: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                   ^---^
+,/truffle/contracts/subscription.sol:24:45: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                          ^------^
+,/truffle/contracts/subscription.sol:24:55: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                                    ^----^
+,/truffle/contracts/subscription.sol:24:63: Warning: Use of the "var" keyword is deprecated.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                                            ^-----^
+,/truffle/contracts/subscription.sol:83:8: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetSubscriptionIndex(ID, msg.sender);
+		     ^---^
+,/truffle/contracts/subscription.sol:83:15: Warning: Use of the "var" keyword is deprecated.
+		var (state, index) = GetSubscriptionIndex(ID, msg.sender);
+		            ^---^
+,/truffle/contracts/strings.sol:260:9: Warning: This declaration shadows an existing declaration.
+        uint len;
+        ^------^
+/truffle/contracts/strings.sol:167:5: The shadowed declaration is here:
+    function len(slice self) internal returns (uint l) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+,/truffle/contracts/Offer.sol:249:3: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+		uint[] candidates;
+		^---------------^
+,/truffle/contracts/Offer.sol:300:3: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+		uint[] candidates;
+		^---------------^
+,/truffle/contracts/subscription.sol:35:4: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+			SubscriberStruct subscriptionList;
+			^-------------------------------^
+,/truffle/contracts/strings.sol:483:21: Warning: The use of labels is deprecated. Please use "if", "switch", "for" or function calls instead.
+                    loop:
+                    ^--^
+,/truffle/contracts/strings.sol:483:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    loop:
+                    ^--^
+,/truffle/contracts/strings.sol:484:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    jumpi(exit, eq(and(mload(ptr), mask), needledata))
+                    ^------------------------------------------------^
+,/truffle/contracts/strings.sol:486:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    jumpi(loop, lt(sub(ptr, 1), end))
+                    ^-------------------------------^
+,/truffle/contracts/strings.sol:488:21: Warning: The use of labels is deprecated. Please use "if", "switch", "for" or function calls instead.
+                    exit:
+                    ^--^
+,/truffle/contracts/strings.sol:488:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    exit:
+                    ^--^
+,/truffle/contracts/strings.sol:520:21: Warning: The use of labels is deprecated. Please use "if", "switch", "for" or function calls instead.
+                    loop:
+                    ^--^
+,/truffle/contracts/strings.sol:520:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    loop:
+                    ^--^
+,/truffle/contracts/strings.sol:521:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    jumpi(ret, eq(and(mload(ptr), mask), needledata))
+                    ^-----------------------------------------------^
+,/truffle/contracts/strings.sol:523:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    jumpi(loop, gt(add(ptr, 1), selfptr))
+                    ^-----------------------------------^
+,/truffle/contracts/strings.sol:525:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    jump(exit)
+                    ^--------^
+,/truffle/contracts/strings.sol:526:21: Warning: The use of labels is deprecated. Please use "if", "switch", "for" or function calls instead.
+                    ret:
+                    ^-^
+,/truffle/contracts/strings.sol:526:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    ret:
+                    ^-^
+,/truffle/contracts/strings.sol:528:21: Warning: The use of labels is deprecated. Please use "if", "switch", "for" or function calls instead.
+                    exit:
+                    ^--^
+,/truffle/contracts/strings.sol:528:21: Warning: Jump instructions and labels are low-level EVM features that can lead to incorrect stack access. Because of that they are discouraged. Please consider using "switch", "if" or "for" statements instead.
+                    exit:
+                    ^--^
+,/truffle/contracts/Offer.sol:39:69: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+		if(isCategoryAllowed(category) && isPricingModelAllowed(model) && keccak256(name) != keccak256("")) {
+		                                                                  ^-------------^
+,/truffle/contracts/Offer.sol:39:69: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+		if(isCategoryAllowed(category) && isPricingModelAllowed(model) && keccak256(name) != keccak256("")) {
+		                                                                  ^-------------^
+,/truffle/contracts/Offer.sol:54:8: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if (keccak256(inputOutputIdentifier) == keccak256('input')){
+			    ^------------------------------^
+,/truffle/contracts/Offer.sol:54:8: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			if (keccak256(inputOutputIdentifier) == keccak256('input')){
+			    ^------------------------------^
+,/truffle/contracts/Offer.sol:56:10: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+					if (keccak256(offers[ID].inputs[i]) == keccak256(input)){
+					    ^-----------------------------^
+,/truffle/contracts/Offer.sol:56:10: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+					if (keccak256(offers[ID].inputs[i]) == keccak256(input)){
+					    ^-----------------------------^
+,/truffle/contracts/Offer.sol:56:45: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+					if (keccak256(offers[ID].inputs[i]) == keccak256(input)){
+					                                       ^--------------^
+,/truffle/contracts/Offer.sol:56:45: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+					if (keccak256(offers[ID].inputs[i]) == keccak256(input)){
+					                                       ^--------------^
+,/truffle/contracts/Offer.sol:62:9: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+				if (keccak256(inputOutputIdentifier) == keccak256('output')){
+				    ^------------------------------^
+,/truffle/contracts/Offer.sol:62:9: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+				if (keccak256(inputOutputIdentifier) == keccak256('output')){
+				    ^------------------------------^
+,/truffle/contracts/Offer.sol:64:11: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+						if (keccak256(offers[ID].outputs[j]) == keccak256(input)){
+						    ^------------------------------^
+,/truffle/contracts/Offer.sol:64:11: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+						if (keccak256(offers[ID].outputs[j]) == keccak256(input)){
+						    ^------------------------------^
+,/truffle/contracts/Offer.sol:64:47: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+						if (keccak256(offers[ID].outputs[j]) == keccak256(input)){
+						                                        ^--------------^
+,/truffle/contracts/Offer.sol:64:47: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+						if (keccak256(offers[ID].outputs[j]) == keccak256(input)){
+						                                        ^--------------^
+,/truffle/contracts/Offer.sol:148:7: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:148:7: Warning: The provided argument of type string storage ref is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:148:40: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:148:40: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:160:11: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							   ^----------------------------^
+,/truffle/contracts/Offer.sol:160:11: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							   ^----------------------------^
+,/truffle/contracts/Offer.sol:160:45: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							                                     ^------------------^
+,/truffle/contracts/Offer.sol:160:45: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							                                     ^------------------^
+,/truffle/contracts/Offer.sol:172:11: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							   ^-----------------------------^
+,/truffle/contracts/Offer.sol:172:11: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							   ^-----------------------------^
+,/truffle/contracts/Offer.sol:172:46: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							                                      ^-------------------^
+,/truffle/contracts/Offer.sol:172:46: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							                                      ^-------------------^
+,/truffle/contracts/Offer.sol:205:7: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:205:7: Warning: The provided argument of type string storage ref is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:205:40: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:205:40: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:217:11: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							   ^----------------------------^
+,/truffle/contracts/Offer.sol:217:11: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							   ^----------------------------^
+,/truffle/contracts/Offer.sol:217:45: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							                                     ^------------------^
+,/truffle/contracts/Offer.sol:217:45: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+							                                     ^------------------^
+,/truffle/contracts/Offer.sol:229:11: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							   ^-----------------------------^
+,/truffle/contracts/Offer.sol:229:11: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							   ^-----------------------------^
+,/truffle/contracts/Offer.sol:229:46: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							                                      ^-------------------^
+,/truffle/contracts/Offer.sol:229:46: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+							                                      ^-------------------^
+,/truffle/contracts/Offer.sol:249:3: Warning: Uninitialized storage pointer. Did you mean '<type> memory candidates'?
+		uint[] candidates;
+		^---------------^
+,/truffle/contracts/Offer.sol:254:7: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:254:7: Warning: The provided argument of type string storage ref is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:254:40: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:254:40: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:267:12: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								   ^----------------------------^
+,/truffle/contracts/Offer.sol:267:12: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								   ^----------------------------^
+,/truffle/contracts/Offer.sol:267:46: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								                                     ^------------------^
+,/truffle/contracts/Offer.sol:267:46: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								                                     ^------------------^
+,/truffle/contracts/Offer.sol:279:12: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								   ^-----------------------------^
+,/truffle/contracts/Offer.sol:279:12: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								   ^-----------------------------^
+,/truffle/contracts/Offer.sol:279:47: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								                                      ^-------------------^
+,/truffle/contracts/Offer.sol:279:47: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								                                      ^-------------------^
+,/truffle/contracts/Offer.sol:300:3: Warning: Uninitialized storage pointer. Did you mean '<type> memory candidates'?
+		uint[] candidates;
+		^---------------^
+,/truffle/contracts/Offer.sol:306:7: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:306:7: Warning: The provided argument of type string storage ref is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			   ^---------------------------^
+,/truffle/contracts/Offer.sol:306:40: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:306:40: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			if(keccak256(offers[i].category) == keccak256(category)) {
+			                                    ^-----------------^
+,/truffle/contracts/Offer.sol:319:12: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								   ^----------------------------^
+,/truffle/contracts/Offer.sol:319:12: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								   ^----------------------------^
+,/truffle/contracts/Offer.sol:319:46: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								                                     ^------------------^
+,/truffle/contracts/Offer.sol:319:46: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].inputs[j]) == keccak256(inputs[k])) {
+								                                     ^------------------^
+,/truffle/contracts/Offer.sol:331:12: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								   ^-----------------------------^
+,/truffle/contracts/Offer.sol:331:12: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								   ^-----------------------------^
+,/truffle/contracts/Offer.sol:331:47: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								                                      ^-------------------^
+,/truffle/contracts/Offer.sol:331:47: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.
+								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
+								                                      ^-------------------^
+,/truffle/contracts/subscription.sol:23:38: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x54d9fAa15b8401A9AF973fBd3838f1E3c1dBb9E3'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+		offerFunction func = offerFunction(0x54d9faa15b8401a9af973fbd3838f1e3c1dbb9e3);
+		                                   ^----------------------------------------^
+,/truffle/contracts/subscription.sol:35:4: Warning: Uninitialized storage pointer. Did you mean '<type> memory subscriptionList'?
+			SubscriberStruct subscriptionList;
+			^-------------------------------^
+,/truffle/contracts/Offer.sol:146:3: Warning: Unused local variable.
+		uint blockNumber = block.number;
+		^--------------^
+,/truffle/contracts/subscription.sol:24:22: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                   ^--^
+,/truffle/contracts/subscription.sol:24:28: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                         ^------^
+,/truffle/contracts/subscription.sol:24:38: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                   ^---^
+,/truffle/contracts/subscription.sol:24:45: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                          ^------^
+,/truffle/contracts/subscription.sol:24:55: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                                    ^----^
+,/truffle/contracts/subscription.sol:24:63: Warning: Unused local variable.
+		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
+		                                                            ^-----^
+,/truffle/contracts/Offer.sol:259:6: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+					candidates.push(i);
+					^----------------^
+,/truffle/contracts/Offer.sol:285:8: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+							candidates.push(i);
+							^----------------^
+,/truffle/contracts/Offer.sol:289:7: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+						candidates.push(i);
+						^----------------^
+,/truffle/contracts/Offer.sol:301:3: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+		candidates.push(1);
+		^----------------^
+,/truffle/contracts/strings.sol:44:5: Warning: Function state mutability can be restricted to pure
+    function stringToBytes32(string memory source) internal returns (bytes32 result) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:55:5: Warning: Function state mutability can be restricted to pure
+    function memcpy(uint dest, uint src, uint len) private {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:79:5: Warning: Function state mutability can be restricted to pure
+    function toSlice(string self) internal returns (slice) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:92:5: Warning: Function state mutability can be restricted to pure
+    function len(bytes32 self) internal returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:141:5: Warning: Function state mutability can be restricted to pure
+    function copy(slice self) internal returns (slice) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:167:5: Warning: Function state mutability can be restricted to pure
+    function len(slice self) internal returns (uint l) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:195:5: Warning: Function state mutability can be restricted to pure
+    function empty(slice self) internal returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:208:5: Warning: Function state mutability can be restricted to pure
+    function compare(slice self, slice other) internal returns (int) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:252:5: Warning: Function state mutability can be restricted to pure
+    function nextRune(slice self, slice rune) internal returns (slice) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:303:5: Warning: Function state mutability can be restricted to pure
+    function ord(slice self) internal returns (uint ret) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:352:5: Warning: Function state mutability can be restricted to pure
+    function keccak(slice self) internal returns (bytes32 ret) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:364:5: Warning: Function state mutability can be restricted to pure
+    function startsWith(slice self, slice needle) internal returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:390:5: Warning: Function state mutability can be restricted to pure
+    function beyond(slice self, slice needle) internal returns (slice) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:419:5: Warning: Function state mutability can be restricted to pure
+    function endsWith(slice self, slice needle) internal returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/truffle/contracts/strings.sol:447:5: Warning: Function state mutability can be restricted to pure
+    function until(slice self, slice needle) internal returns (slice) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+Writing artifacts to ./build/contracts
+
+Using network 'development'.
+
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0x448457e1cc174f6c3a22b590f2994b09766cab5c8399f9ee9fba7ac00edbb5b6
+  Migrations: 0x9d551b9be3a9252742db3e08d8e1accbda1f5c30
+Saving successful migration to network...
+  ... 0xb920bf8a9316c6f458a4c5f351f3e8b52311ae16df16c2561d00a18d936d02ea
+Saving artifacts...
+Running migration: 2_secondary_migration.js
+  Deploying StringUtils...
+  ... 0xe823448253c27b41969ac776c7bc975efd3c748bb174a0e89963e9211c3b24ba
+  StringUtils: 0x09783fb79999c2cb9e9c270e97cf3f2e45ea646c
+  Deploying strings...
+  ... 0xc19a069e1f144ec06567b8d9dd7833027bcb002842bfaf5c3b0ae7ac869d65c8
+  strings: 0x0a244bf53b5759cc84083257e3bd1dcefb96c8e4
+  Linking StringUtils to Offer
+  Deploying Offer...
+  ... 0x0fab8a6768a47616cdfd273c3c6e0af62761d33cb254ccff3219b8bcf98f5873
+Error encountered, bailing. Network state unknown. Review successful transactions manually.
+Error: The contract code couldn't be stored, please check your gas amount.
+    at Object.callback (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/contract.js:147:1)
+    at /usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/method.js:142:1
+    at /usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/requestmanager.js:89:1
+    at /usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-migrate/index.js:225:1
+    at /usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-provider/wrapper.js:134:1
+    at XMLHttpRequest.request.onreadystatechange (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/httpprovider.js:128:1)
+    at XMLHttpRequestEventTarget.dispatchEvent (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:64:1)
+    at XMLHttpRequest._setReadyState (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:354:1)
+    at XMLHttpRequest._onHttpResponseEnd (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:509:1)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:469:1)
+    at IncomingMessage.emit (events.js:187:15)
+    at endReadableNT (_stream_readable.js:1098:12)
+    at process.internalTickCallback (internal/process/next_tick.js:72:19)

@@ -128,13 +128,13 @@ function modifyTransactions(startID, endID){
 }
 
 function returnContractAddress(){
-  //var contractAddress = "0x1b24add6acd315456bdb7e96ded9c708f0f07894"; //New Fair contract
-  var contractAddress = "0x23282217a7f1738254dde5e9d5f4b6f56a008a2a"; //Unfair contract
+  //var contractAddress = "0xeeabb8864589e3545ae6f7ebcf8e4f86faa0dfdb1b24add6acd315456bdb7e96ded9c708f0f07894"; //New Fair contract
+  var contractAddress = "dummy_address"; //Unfair contract
 	return contractAddress;
 }
 
 function returnContractInterface(){
-	var contractInterface = eth.contract([
+	var contractInterface = eth.contract( [
     {
       "inputs": [],
       "payable": false,
