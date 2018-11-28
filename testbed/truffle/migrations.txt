@@ -449,29 +449,29 @@ Using network 'development'.
 
 Running migration: 1_initial_migration.js
   Deploying Migrations...
-  ... 0xe351a69c2e09f3442aaf06708d2a7d588a132884d172666aeffa0cee77b5d7c6
-  Migrations: 0x0a882bf97d318d46d7e3108739f5e1a5659beb13
+  ... 0xd0bd6230c57e7dc6d445c7e42ed6a6c29292dbebfe0f55723ba4923ff6f9bc2d
+  Migrations: 0xa6ad4aa21dac6a1d45a82db1a3b198807a71df1a
 Saving successful migration to network...
-  ... 0x34346fad0dca7d425410958788994fd06cdfe4db3fe68e8f861cd4e5d2792139
+  ... 0xe189bb97149299b009a03333cf38618b17054661cfcdd922701a9773e8f75171
 Saving artifacts...
 Running migration: 2_secondary_migration.js
   Deploying StringUtils...
-  ... 0xa60fad713368a952178b1fcf0c5d5edad6314e7967e747e26b0856a1586358ec
-  StringUtils: 0x9b51c944b1622fe8e44093c21aec9eb796f3ebd4
+  ... 0x4051f8630735ff4a0ca7dc69ea9c31ece49ef4f410bcbf368bf570a2408cf27d
+  StringUtils: 0xf48e3c1f504b0bf096e44f8bbe9b0142f4fe8349
   Deploying strings...
-  ... 0x74e6021e1f1ddb712444fff9a749d9e67ecb645d4196dc8d22db8e4eed52a0f7
-  strings: 0xa7a7ecf68bcbe1956221dcb0db6c76b9b38f9e72
+  ... 0xc5d7bf54e7bc7e9146711c306cef845b4c8ef6761297599fa62e9921dc05d193
+  strings: 0x2699a09955ed8349d3c0a224a57492a6577c6008
   Linking StringUtils to Offer
   Deploying Offer...
-  ... 0x58f0ead5863f0c68a5b2e707d8347a22ab8d8a7156103ea0d9925ae1c41a8ed8
-  Offer: 0xb836594f260b8331fd28aaa9a0740fc6b6a0f620
+  ... 0xc93e827736ec37e5e666f67bcfe7e7410840dfde65e9be31c2d406d2f2eb2791
+  Offer: 0x5272bc82ec68018cd02c12e62b8bc4a83e100d91
 Saving successful migration to network...
-  ... 0x5c9739026aaedab89daea0ed8dd1f47f2f9b019189dd88ec5d9f8d88731449bd
+  ... 0x007d820e672524aade33bf1fb4e38b550bcbb66ea2306f5e210c267576afe6f2
 Saving artifacts...
 Running migration: 3_subscription_migration.js
   Deploying subscription...
-  ... 0xc53cdcd4c2429e2cf914e257d2b2212706df25df1ff9c81d1fddc877cfcb4f7b
-  subscription: 0xa69de105a6dfd62965ffb526018e2bea71bf2144
+  ... 0x1018fb60727e41162d78f8af1cf9126fa2e24b5302893c6062abbee978b623c2
+  subscription: 0xd886f023586ffb9b64f33031f8baa24dd715a14c
 Saving successful migration to network...
-  ... 0x7573d5f60d268a00019c8775cf0cab7ba3f856c956f657c026912b84974b3918
+  ... 0x341ea96594b127af711a1853756bb2c879647b24b5b894e863a55b63c59dbc49
 Saving artifacts...

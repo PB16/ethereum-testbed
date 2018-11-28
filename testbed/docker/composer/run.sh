@@ -20,3 +20,5 @@ sudo docker cp composer_miner1_1:/truffle/migrations.txt /home/peter/ethereum-te
 
 #replacing the ABI in the test scripts.
 sudo python3 ../../truffle/setContractAddress.py
+
+sudo python3 ../../truffle/load-test-scripts.py
