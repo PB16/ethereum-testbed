@@ -2,7 +2,6 @@ import pexpect
 from time import sleep
 import os
 
-print(os.getcwd())
 geth = pexpect.spawn("geth attach ipc:filecontainer/miner1/geth.ipc")
 i = 0
 

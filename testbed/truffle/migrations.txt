@@ -449,33 +449,29 @@ Using network 'development'.
 
 Running migration: 1_initial_migration.js
   Deploying Migrations...
-  ... 0x448457e1cc174f6c3a22b590f2994b09766cab5c8399f9ee9fba7ac00edbb5b6
-  Migrations: 0x9d551b9be3a9252742db3e08d8e1accbda1f5c30
+  ... 0xe351a69c2e09f3442aaf06708d2a7d588a132884d172666aeffa0cee77b5d7c6
+  Migrations: 0x0a882bf97d318d46d7e3108739f5e1a5659beb13
 Saving successful migration to network...
-  ... 0xb920bf8a9316c6f458a4c5f351f3e8b52311ae16df16c2561d00a18d936d02ea
+  ... 0x34346fad0dca7d425410958788994fd06cdfe4db3fe68e8f861cd4e5d2792139
 Saving artifacts...
 Running migration: 2_secondary_migration.js
   Deploying StringUtils...
-  ... 0xe823448253c27b41969ac776c7bc975efd3c748bb174a0e89963e9211c3b24ba
-  StringUtils: 0x09783fb79999c2cb9e9c270e97cf3f2e45ea646c
+  ... 0xa60fad713368a952178b1fcf0c5d5edad6314e7967e747e26b0856a1586358ec
+  StringUtils: 0x9b51c944b1622fe8e44093c21aec9eb796f3ebd4
   Deploying strings...
-  ... 0xc19a069e1f144ec06567b8d9dd7833027bcb002842bfaf5c3b0ae7ac869d65c8
-  strings: 0x0a244bf53b5759cc84083257e3bd1dcefb96c8e4
+  ... 0x74e6021e1f1ddb712444fff9a749d9e67ecb645d4196dc8d22db8e4eed52a0f7
+  strings: 0xa7a7ecf68bcbe1956221dcb0db6c76b9b38f9e72
   Linking StringUtils to Offer
   Deploying Offer...
-  ... 0x0fab8a6768a47616cdfd273c3c6e0af62761d33cb254ccff3219b8bcf98f5873
-Error encountered, bailing. Network state unknown. Review successful transactions manually.
-Error: The contract code couldn't be stored, please check your gas amount.
-    at Object.callback (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/contract.js:147:1)
-    at /usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/method.js:142:1
-    at /usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/requestmanager.js:89:1
-    at /usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-migrate/index.js:225:1
-    at /usr/local/lib/node_modules/truffle/build/webpack:/packages/truffle-provider/wrapper.js:134:1
-    at XMLHttpRequest.request.onreadystatechange (/usr/local/lib/node_modules/truffle/build/webpack:/~/web3/lib/web3/httpprovider.js:128:1)
-    at XMLHttpRequestEventTarget.dispatchEvent (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:64:1)
-    at XMLHttpRequest._setReadyState (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:354:1)
-    at XMLHttpRequest._onHttpResponseEnd (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:509:1)
-    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/truffle/build/webpack:/~/xhr2/lib/xhr2.js:469:1)
-    at IncomingMessage.emit (events.js:187:15)
-    at endReadableNT (_stream_readable.js:1098:12)
-    at process.internalTickCallback (internal/process/next_tick.js:72:19)
+  ... 0x58f0ead5863f0c68a5b2e707d8347a22ab8d8a7156103ea0d9925ae1c41a8ed8
+  Offer: 0xb836594f260b8331fd28aaa9a0740fc6b6a0f620
+Saving successful migration to network...
+  ... 0x5c9739026aaedab89daea0ed8dd1f47f2f9b019189dd88ec5d9f8d88731449bd
+Saving artifacts...
+Running migration: 3_subscription_migration.js
+  Deploying subscription...
+  ... 0xc53cdcd4c2429e2cf914e257d2b2212706df25df1ff9c81d1fddc877cfcb4f7b
+  subscription: 0xa69de105a6dfd62965ffb526018e2bea71bf2144
+Saving successful migration to network...
+  ... 0x7573d5f60d268a00019c8775cf0cab7ba3f856c956f657c026912b84974b3918
+Saving artifacts...
