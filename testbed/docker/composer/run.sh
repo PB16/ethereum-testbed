@@ -14,11 +14,14 @@ sudo docker exec -it -d composer_miner1_1 /bin/bash -c "geth --datadir workspace
 #check all conditions for migration of smart contracts is met.
 sudo python3 ../../truffle/automatic-migration.py
 
+#Deploying smart contracts and pipe the output to a txt file.
 sudo docker exec -it composer_miner1_1 /bin/bash -c "cd truffle/ && truffle migrate > migrations.txt"
 
+#Copying file with contract addresses from docker container to host.
 sudo docker cp composer_miner1_1:/truffle/migrations.txt /home/peter/ethereum-testbed/testbed/truffle/
 
 #replacing the ABI in the test scripts.
 sudo python3 ../../truffle/setContractAddress.py
 
+#Load javascript files with tests.
 sudo python3 ../../truffle/load-test-scripts.py
