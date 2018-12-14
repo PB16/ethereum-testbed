@@ -17,11 +17,12 @@ def print_circle_node(screen, message, font, color, text_center, circ_pos):
     message = "Hej"
     screen.blit(*text_objects(font, message, color, circ_pos))
 
-def print_rectangular_node(screen, message, font, color, rect_area):
+def print_rectangular_node(screen, message, name, font, color, rect_area):
     rect = pygame.draw.rect(screen, BLUE, rect_area)
     font = pygame.font.Font(None, 50)
     color = pygame.Color("red")
     screen.blit(*text_objects(font, message, color, (rect_area[0]+50,rect_area[1]+50)))
+    screen.blit(*text_objects(font, name, color, (rect_area[0]+100,rect_area[1]+150)))
 
 def connect_nodes(start_node, end_node):
 	pygame.draw.lines(screen, pygame.Color("red"), False, [start_node.get_center(), end_node.get_center()], 5)
@@ -43,18 +44,35 @@ def get_blocknumber(node):
     number = result.group(1).split("m")[1].split("\x1b")[0]
     return number
 
-def transfer_packet(start, end):
-    coefficients = np.polyfit(start.get_center(), end.get_center(), 1)
-    x = start.get_center()[0]
-    while True:
-        y = np.floor(coefficients[0]*x+coefficients[1])
-        circ = pygame.draw.circle(screen, BLUE, (int(x), int(y)), 50)
-        pygame.display.update()
+def transfer_packet(start, end, x):
+    slope = (end.get_center()[1]-start.get_center()[1])/(end.get_center()[0]-start.get_center()[0])
+    orientation = (end.get_center()[0] - start.get_center()[0])
+    y = np.ceil(slope*(x-end.get_center()[0])+end.get_center()[1])
+    circ = pygame.draw.circle(screen, BLUE, (int(x), int(y)), 50)
+    pygame.display.update()
 
-        if (x, y) is end.get_center():
-            break
-        else:
-            x += 1
+    if x > end.get_center()[0] - 5 and x < end.get_center()[0] + 5 and y > end.get_center()[1] - 5 and y < end.get_center()[1] + 5:
+        return (True, x)
+    else:
+        if orientation < 0:
+            x -= 20
+        elif orientation >= 0:
+            x += 20
+
+        return (False, x)
+
+def print_nodes():
+    connect_to_all_other_nodes(miner1_node, nodes_list)
+    connect_to_all_other_nodes(miner2_node, nodes_list)
+    connect_to_all_other_nodes(node1_node, nodes_list)
+    connect_to_all_other_nodes(node2_node, nodes_list)
+    connect_to_all_other_nodes(node3_node, nodes_list)
+
+    print_rectangular_node(screen, get_blocknumber(miner1), "miner1", None, None, miner1_node.get_node_area())
+    print_rectangular_node(screen, get_blocknumber(miner2), "miner2", None, None, miner2_node.get_node_area())
+    print_rectangular_node(screen, get_blocknumber(node1), "node1", None, None, node1_node.get_node_area())
+    print_rectangular_node(screen, get_blocknumber(node2), "node2", None, None, node2_node.get_node_area())
+    print_rectangular_node(screen, get_blocknumber(node3), "node3", None, None, node3_node.get_node_area())
 
 BLUE = (0, 0, 255)
 BLACK = (0, 0, 0)
@@ -78,22 +96,20 @@ node3 = pexpect.spawn("geth attach ipc:/home/peter/ethereum-testbed/testbed/dock
 
 miner1.expect(">")
 
+x = node2_node.get_center()[0]
+x1 = miner1_node.get_center()[0]
+
 while True:
-    connect_to_all_other_nodes(miner1_node, nodes_list)
-    connect_to_all_other_nodes(miner2_node, nodes_list)
-    connect_to_all_other_nodes(node1_node, nodes_list)
-    connect_to_all_other_nodes(node2_node, nodes_list)
-    connect_to_all_other_nodes(node3_node, nodes_list)
-
-    print_rectangular_node(screen, get_blocknumber(miner1), None, None, miner1_node.get_node_area())
-    print_rectangular_node(screen, get_blocknumber(miner2), None, None, miner2_node.get_node_area())
-    print_rectangular_node(screen, get_blocknumber(node1), None, None, node1_node.get_node_area())
-    print_rectangular_node(screen, get_blocknumber(node2), None, None, node2_node.get_node_area())
-    print_rectangular_node(screen, get_blocknumber(node3), None, None, node3_node.get_node_area())
-
-    pygame.display.update()
-
-    transfer_packet(miner1_node, miner2_node)
-    sleep(0.5)
+    screen.fill(BLACK)
+    print_nodes()
+    (finish, x) = transfer_packet(node2_node, node1_node, x)
+    (finish1, x1) = transfer_packet(miner1_node, miner2_node, x1)
+    print((finish, finish1))
+    if finish is True and finish1 is True:
+        break
+    #transfer_packet(miner1_node, miner2_node)
+    #transfer_packet(miner1_node, node1_node)
+    #transfer_packet(miner1_node, node2_node)
+    #transfer_packet(miner1_node, node3_node)
 
 pygame.quit()
