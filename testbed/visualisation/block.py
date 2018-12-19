@@ -10,3 +10,6 @@ class Block:
 
     def get_center(self):
         return (self.x + (self.width / 2), self.y + (self.height / 2))
+
+    def move_x(self, x):
+    	self.x += x
