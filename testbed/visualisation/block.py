@@ -1,9 +1,10 @@
 class Block:
-    def __init__(self, x, y, width, height):
+    def __init__(self, x, y, width, height, blocknumber):
         self.x = x
         self.y = y
         self.width = width
         self.height = height
+        self.blocknumber = blocknumber
 
     def get_area(self):
         return [self.x, self.y, self.width, self.height]
@@ -13,3 +14,6 @@ class Block:
 
     def move_x(self, x):
     	self.x += x
+
+    def get_blocknumber(self):
+    	return self.blocknumber
