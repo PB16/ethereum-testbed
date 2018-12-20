@@ -18,7 +18,7 @@ class Chain:
         return rendered, rendered.get_rect(center=text_center)
 
     def add_block(self, x=0):
-        block = Block(self.x, self.y, 150, 150, x)
+        block = self.get_block(x)
         self.blocks.append(block)
         self.x += 300
 
@@ -46,10 +46,11 @@ class Chain:
         pygame.draw.rect(self.screen, BLUE, block.get_area())
         font = pygame.font.Font(None, 30)
         color = pygame.Color("red")
-        self.screen.blit(*self.text_objects(font, self.get_block(block.get_blocknumber())[0], color, (block.get_area()[0]+65,block.get_area()[1]+20)))
-        self.screen.blit(*self.text_objects(font, self.get_block(block.get_blocknumber())[1], color, (block.get_area()[0]+65,block.get_area()[1]+50)))
+        self.screen.blit(*self.text_objects(font, block.get_hash(), color, (block.get_area()[0]+65,block.get_area()[1]+20)))
+        self.screen.blit(*self.text_objects(font, block.get_parenthash(), color, (block.get_area()[0]+65,block.get_area()[1]+50)))
 
     def move_x(self, x):
+        self.x += x
         for block in self.blocks:
             block.move_x(x)
 
@@ -80,11 +81,17 @@ class Chain:
 
         parentHashstr = result.group(1)
 
-        #print(hashstr.split('0x')[1].split('"')[0])
         hashstr = hashstr.split('0x')[1].split('"')[0]
         hashstr = hashstr[:4] + "...." + hashstr[-4:]
 
         parentHashstr = parentHashstr.split('0x')[1].split('"')[0]
         parentHashstr = parentHashstr[:4] + "...." + parentHashstr[-4:]
 
-        return (hashstr, parentHashstr)
+        return Block(self.x, self.y, 150, 150, blocknumber, hashstr, parentHashstr)
+
+    def get_x_y(self):
+        return (self.x, self.y)
+
+    def get_end_x_y(self):
+        for block in self.blocks[-1:]:
+            return block.get_center()
