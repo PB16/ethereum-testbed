@@ -1,6 +1,7 @@
 import pygame
 import pexpect
 import re
+from datetime import datetime
 from block import Block
 
 BLUE = (0, 0, 255)
@@ -46,8 +47,10 @@ class Chain:
         pygame.draw.rect(self.screen, BLUE, block.get_area())
         font = pygame.font.Font(None, 30)
         color = pygame.Color("red")
-        self.screen.blit(*self.text_objects(font, block.get_hash(), color, (block.get_area()[0]+65,block.get_area()[1]+20)))
-        self.screen.blit(*self.text_objects(font, block.get_parenthash(), color, (block.get_area()[0]+65,block.get_area()[1]+50)))
+        self.screen.blit(*self.text_objects(font, str(block.get_blocknumber()), color, (block.get_area()[0]+20,block.get_area()[1]+20)))
+        self.screen.blit(*self.text_objects(font, block.get_timestamp(), color, (block.get_area()[0]+50,block.get_area()[1]+50)))
+        self.screen.blit(*self.text_objects(font, block.get_hash(), color, (block.get_area()[0]+65,block.get_area()[1]+80)))
+        self.screen.blit(*self.text_objects(font, block.get_parenthash(), color, (block.get_area()[0]+65,block.get_area()[1]+110)))
 
     def move_x(self, x):
         self.x += x
@@ -87,7 +90,12 @@ class Chain:
         parentHashstr = parentHashstr.split('0x')[1].split('"')[0]
         parentHashstr = parentHashstr[:4] + "...." + parentHashstr[-4:]
 
-        return Block(self.x, self.y, 150, 150, blocknumber, hashstr, parentHashstr)
+        result = re.search('timestamp: (.*),', data)
+
+        timestamp = result.group(1).split("m")[1].split("\x1b")[0]
+        timestamp = datetime.fromtimestamp(int(timestamp)).strftime("%H:%M:%S")
+
+        return Block(self.x, self.y, 150, 150, blocknumber, hashstr, parentHashstr, timestamp)
 
     def get_x_y(self):
         return (self.x, self.y)
@@ -95,3 +103,14 @@ class Chain:
     def get_end_x_y(self):
         for block in self.blocks[-1:]:
             return block.get_center()
+
+    def save(self):
+        with open("chain.txt", "w") as tfile:
+            for block in self.blocks:
+                tfile.write(block.to_string() + "\n")
+
+    def load(self):
+        with open("chain.txt", "r") as sfile:
+            for line in sfile:
+                arguments = line.split('\n')[0].split(',')
+                self.blocks.append(Block(int(arguments[0]),int(arguments[1]),int(arguments[2]),int(arguments[3]),arguments[4],arguments[5],arguments[6],arguments[7]))
