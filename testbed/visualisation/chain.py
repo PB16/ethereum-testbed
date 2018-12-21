@@ -109,8 +109,8 @@ class Chain:
             for block in self.blocks:
                 tfile.write(block.to_string() + "\n")
 
-    def load(self):
-        with open("chain.txt", "r") as sfile:
+    def load(self, datafile):
+        with open(datafile, "r") as sfile:
             for line in sfile:
                 arguments = line.split('\n')[0].split(',')
                 self.blocks.append(Block(int(arguments[0]),int(arguments[1]),int(arguments[2]),int(arguments[3]),arguments[4],arguments[5],arguments[6],arguments[7]))

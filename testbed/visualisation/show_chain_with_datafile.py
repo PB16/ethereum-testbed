@@ -11,38 +11,27 @@ from block import Block
 from chain import Chain
 import sys
 
-def visualize_without_file():
+def visualize_with_datafile(datafile):
     BLUE = (0, 0, 255)
     BLACK = (0, 0, 0)
-    
+
     pygame.init()
     screen = pygame.display.set_mode((1800,1100))
     
     chain = Chain(screen, 1100, 200, "../docker/composer/filecontainer/miner1/geth.ipc")
-    chain1 = Chain(screen, 200, 400, "../docker/composer/filecontainer/miner2/geth.ipc")
     
-    if len(sys.argv) >= 2 and sys.argv[1] == "chain.txt":
-        chain.load()
-    
-    #for i in range(0, 2):
-    #    chain.add_block(i)
-    #    chain1.add_block(i)
-    
-    #chain.print_chain()
-    #chain1.print_chain()
-    
+    chain.load(datafile)
+
+    chain.print_chain()    
     
     running = True
     
     while running:
         screen.fill(BLACK)
-        #chain.move_x(-300)
         chain.print_chain()
-        #chain.add_block(i)
         pygame.display.update()
     
         sleep(1)
-        #i += 1
         
         events = pygame.event.get()
         for event in events:
@@ -55,11 +44,7 @@ def visualize_without_file():
                    running = False
             if event.type == pygame.QUIT:
                 pygame.quit(); sys.exit();
-    
-    print("saving")
-    
-    chain.save()
-    
+
     print("exiting")
     
     sleep(1)
