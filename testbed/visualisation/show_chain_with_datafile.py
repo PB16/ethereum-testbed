@@ -18,7 +18,7 @@ def visualize_with_datafile(datafile):
     pygame.init()
     screen = pygame.display.set_mode((1800,1100))
     
-    chain = Chain(screen, 1100, 200, "../docker/composer/filecontainer/miner1/geth.ipc")
+    chain = Chain(screen, 1100, 200)
     
     chain.load(datafile)
 

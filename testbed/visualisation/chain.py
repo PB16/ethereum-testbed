@@ -7,12 +7,14 @@ from block import Block
 BLUE = (0, 0, 255)
 
 class Chain:
-    def __init__(self, screen, x, y, geth):
+    def __init__(self, screen, x, y, geth=""):
         self.x = x
         self.y = y
         self.blocks = []
         self.screen = screen
-        self.geth = pexpect.spawn("geth attach ipc:" + geth)
+
+        if geth != "":
+            self.geth = pexpect.spawn("geth attach ipc:" + geth)
 
     def text_objects(self, font, text, color, text_center):
         rendered = font.render(text, True, color)
