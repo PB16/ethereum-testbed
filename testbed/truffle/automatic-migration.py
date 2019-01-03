@@ -1,3 +1,4 @@
+import sys
 import pexpect
 from time import sleep
 import os

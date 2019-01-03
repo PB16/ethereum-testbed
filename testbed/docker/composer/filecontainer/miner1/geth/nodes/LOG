@@ -1,0 +1,52 @@
+=============== Dec 20, 2018 (UTC) ===============
+14:19:10.328835 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:19:10.332719 db@open opening
+14:19:10.334799 version@stat F·[] S·0B[] Sc·[]
+14:19:10.341420 db@janitor F·2 G·0
+14:19:10.341453 db@open done T·8.71408ms
+14:19:11.883701 db@close closing
+14:19:11.883719 db@close done T·17.157µs
+=============== Dec 20, 2018 (UTC) ===============
+14:19:12.514365 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:19:12.514429 version@stat F·[] S·0B[] Sc·[]
+14:19:12.514434 db@open opening
+14:19:12.514458 journal@recovery F·1
+14:19:12.515713 journal@recovery recovering @1
+14:19:12.521918 memdb@flush created L0@2 N·37 S·727B "n:\x00..ail,v33":"version,v1"
+14:19:12.523001 version@stat F·[1] S·727B[727B] Sc·[0.25]
+14:19:12.540708 db@janitor F·3 G·0
+14:19:12.540723 db@open done T·26.284674ms
+=============== Dec 20, 2018 (UTC) ===============
+21:07:29.762043 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:07:29.762476 version@stat F·[1] S·727B[727B] Sc·[0.25]
+21:07:29.762486 db@open opening
+21:07:29.762524 journal@recovery F·1
+21:07:29.763865 journal@recovery recovering @3
+21:07:29.858879 memdb@flush created L0@5 N·41530 S·568KiB "n:\x00..ing,v40865":"n:\xff..ing,v5465"
+21:07:29.860081 version@stat F·[2] S·569KiB[569KiB] Sc·[0.50]
+21:07:29.883410 db@janitor F·4 G·0
+21:07:29.883428 db@open done T·120.93749ms
+21:07:29.889675 table@compaction L0·2 -> L1·0 S·569KiB Q·41570
+21:07:29.904392 table@build created L1@8 N·6776 S·222KiB "n:\x00..ing,v40865":"version,v1"
+21:07:29.904425 version@stat F·[0 1] S·222KiB[0B 222KiB] Sc·[0.00 0.00]
+21:07:29.912336 table@compaction committed F-1 S-346KiB Ke·0 D·34791 T·22.612971ms
+21:07:29.912643 table@remove removed @5
+21:07:29.912916 table@remove removed @2
+21:07:31.568896 db@close closing
+21:07:31.568931 db@close done T·33.856µs
+=============== Dec 20, 2018 (UTC) ===============
+21:07:32.100072 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:07:32.100171 version@stat F·[0 1] S·222KiB[0B 222KiB] Sc·[0.00 0.00]
+21:07:32.100178 db@open opening
+21:07:32.100210 journal@recovery F·1
+21:07:32.101450 journal@recovery recovering @6
+21:07:32.103368 memdb@flush created L0@9 N·86 S·2KiB "n:\f..ail,v41639":"n:\xef..ail,v41609"
+21:07:32.104793 version@stat F·[1 1] S·225KiB[2KiB 222KiB] Sc·[0.25 0.00]
+21:07:32.121516 db@janitor F·4 G·0
+21:07:32.121537 db@open done T·21.353979ms
+21:07:32.127283 table@compaction L0·1 -> L1·1 S·225KiB Q·41657
+21:07:32.138167 table@build created L1@12 N·6822 S·223KiB "n:\x00..ing,v40865":"version,v1"
+21:07:32.138212 version@stat F·[0 1] S·223KiB[0B 223KiB] Sc·[0.00 0.00]
+21:07:32.146048 table@compaction committed F-1 S-1KiB Ke·0 D·40 T·18.744776ms
+21:07:32.146103 table@remove removed @9
+21:07:32.146174 table@remove removed @8
