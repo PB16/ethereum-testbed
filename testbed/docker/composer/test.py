@@ -17,3 +17,11 @@ for x in os.scandir((os.getcwd()+"/filecontainer/")):
 
 for x in miners:
     subprocess.run(["sudo", "./accounts.sh", x])
+
+for x in miners:
+    subprocess.run(["sudo", "python3", "../../truffle/automatic-migration.py", x])
+
+sleep(5)
+
+for x in miners:
+    subprocess.run(["sudo", "./migration.sh", x])
