@@ -10,7 +10,7 @@ with open("accountKeys.txt", "r") as sfile:
   result = re.search('{(.*)}', lines[0])
   accountAddress = "0x" + result.group(1)
 
-#sets the address in the "from:" attribute to the address of the miner1 account.
+#sets the address in the "from:" attribute to the address of the miner account.
 with open("truffle/truffle.js", "r") as tfile:
   lines = tfile.readlines()
   result = re.search('\"(.*)\"', lines[10])

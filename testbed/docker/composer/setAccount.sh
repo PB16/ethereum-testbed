@@ -1,0 +1,1 @@
+sudo docker exec -it composer_$1_1 /bin/bash -c "python3 setAccount.py"
