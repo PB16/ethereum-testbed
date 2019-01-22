@@ -1,0 +1,86 @@
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/subscription.sol...
+
+Compilation warnings encountered:
+
+/truffle/contracts/subscription.sol:24:34: Warning: Unused local variable.
+		(uint256 ID, address provider, string memory name, string memory category, uint256 p ...
+		                               ^----------------^
+,/truffle/contracts/subscription.sol:24:54: Warning: Unused local variable.
+ ... ress provider, string memory name, string memory category, uint256 price, string memory endp ...
+                                        ^--------------------^
+,/truffle/contracts/subscription.sol:24:78: Warning: Unused local variable.
+ ... mory name, string memory category, uint256 price, string memory endpoint, bytes32[] ...
+                                        ^-----------^
+,/truffle/contracts/subscription.sol:24:93: Warning: Unused local variable.
+ ... ng memory category, uint256 price, string memory endpoint, bytes32[] memory inputs, bytes32[ ...
+                                        ^--------------------^
+,/truffle/contracts/subscription.sol:24:117: Warning: Unused local variable.
+ ... 256 price, string memory endpoint, bytes32[] memory inputs, bytes32[] memory outputs) = func. ...
+                                        ^---------------------^
+,/truffle/contracts/subscription.sol:24:142: Warning: Unused local variable.
+ ... endpoint, bytes32[] memory inputs, bytes32[] memory outputs) = func.getOffer(_ID);
+                                        ^----------------------^
+
+Writing artifacts to ./build/contracts
+
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      1234
+> Block gas limit: 79532392929
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x8c2e15ae8ce2d5e5af147c6ce2d91c0474668e427926d61f8bae35d93e8aeec7
+   > Blocks: 0            Seconds: 48
+   > contract address:    0xea2Df1bE328A5D7b87Ed26C5a0ADF937a49e2cf1
+   > account:             0x5dcb43D9175Aa0ae8284339De8f8252c2d325953
+   > balance:             35
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_secondary_migration.js
+========================
+
+   Deploying 'subscription'
+   ------------------------
+   > transaction hash:    0xa1226ff69e6817de2ad08ada4b3c7e6d0c86265d34039df528e13c8649d29d6e
+   > Blocks: 2            Seconds: 12
+   > contract address:    0x0286E6e57BF24591b4642E347AA6B6448f485b24
+   > account:             0x5dcb43D9175Aa0ae8284339De8f8252c2d325953
+   > balance:             50
+   > gas used:            936805
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0187361 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0187361 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02443426 ETH
+

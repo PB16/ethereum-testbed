@@ -1,0 +1,86 @@
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/subscription.sol...
+
+Compilation warnings encountered:
+
+/truffle/contracts/subscription.sol:24:34: Warning: Unused local variable.
+		(uint256 ID, address provider, string memory name, string memory category, uint256 p ...
+		                               ^----------------^
+,/truffle/contracts/subscription.sol:24:54: Warning: Unused local variable.
+ ... ress provider, string memory name, string memory category, uint256 price, string memory endp ...
+                                        ^--------------------^
+,/truffle/contracts/subscription.sol:24:78: Warning: Unused local variable.
+ ... mory name, string memory category, uint256 price, string memory endpoint, bytes32[] ...
+                                        ^-----------^
+,/truffle/contracts/subscription.sol:24:93: Warning: Unused local variable.
+ ... ng memory category, uint256 price, string memory endpoint, bytes32[] memory inputs, bytes32[ ...
+                                        ^--------------------^
+,/truffle/contracts/subscription.sol:24:117: Warning: Unused local variable.
+ ... 256 price, string memory endpoint, bytes32[] memory inputs, bytes32[] memory outputs) = func. ...
+                                        ^---------------------^
+,/truffle/contracts/subscription.sol:24:142: Warning: Unused local variable.
+ ... endpoint, bytes32[] memory inputs, bytes32[] memory outputs) = func.getOffer(_ID);
+                                        ^----------------------^
+
+Writing artifacts to ./build/contracts
+
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      1234
+> Block gas limit: 79843826296
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x64784fcd759ff7d5c4480a68311be56a0d6dc106e81f244caf5dccb7fba84669
+   > Blocks: 0            Seconds: 24
+   > contract address:    0x536C3a0e54dBfFE307845f0e9670eB33332FF22e
+   > account:             0x87cE51c33271806da1E69B0dEae3382A1652dA54
+   > balance:             15
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_secondary_migration.js
+========================
+
+   Deploying 'subscription'
+   ------------------------
+   > transaction hash:    0x82d1faa553344349800b39854d1099d06d79d16a903bec99790815c334e73a2a
+   > Blocks: 1            Seconds: 68
+   > contract address:    0xE3f501c37C14aabB88f86ed9e14746c06357a0D6
+   > account:             0x87cE51c33271806da1E69B0dEae3382A1652dA54
+   > balance:             25
+   > gas used:            936805
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0187361 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0187361 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02443426 ETH
+
