@@ -1,8 +1,8 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.5.0;
 
 // not implementated contract but needed as a strutual guide for the checkExistingOffer to be able to call contract on chain
 contract offerFunction {
-	function getOffer(uint _ID) public constant returns (uint ID, address provider, string name, string category, uint price, string endpoint, bytes32[] inputs, bytes32[] outputs);
+	function getOffer(uint _ID) public pure returns (uint ID, address provider, string memory name, string memory category, uint price, string memory endpoint, bytes32[] memory inputs, bytes32[] memory outputs);
 }
 
 contract subscription {
@@ -15,14 +15,14 @@ contract subscription {
 	address owner;
 	mapping (uint => SubscriberStruct) subscriptions;
 	
-	function subscription() public{
+	constructor() public{
 		owner = msg.sender;
 	}
 
-	function CheckExistingOffer(uint _ID) public constant returns(bool){
-		offerFunction func = offerFunction(0x54d9faa15b8401a9af973fbd3838f1e3c1dbb9e3);
-		var (ID, provider, name, category, price, endpoint, inputs, outputs) = func.getOffer(_ID);
-		if (ID > 0 && provider != 0x0){
+	function CheckExistingOffer(uint _ID) public pure returns(bool){
+		offerFunction func = offerFunction(0x54d9fAa15b8401A9AF973fBd3838f1E3c1dBb9E3);
+		(uint256 ID, address provider, string memory name, string memory category, uint256 price, string memory endpoint, bytes32[] memory inputs, bytes32[] memory outputs) = func.getOffer(_ID);
+		if (ID > 0 && provider != address(0x0)){
 			return true;
 		}
 		else{
@@ -32,7 +32,7 @@ contract subscription {
 
 	function createSubscription(uint _ID) public returns(bool){
 		if (subscriptions[_ID].ID == 0){
-			SubscriberStruct subscriptionList;
+			SubscriberStruct memory subscriptionList;
 			address[] memory firstSubscriber = new address[](1);
 			firstSubscriber[0] = msg.sender;
 			subscriptionList.ID = _ID;
@@ -45,11 +45,11 @@ contract subscription {
 		return true;
 	}
 
-	function returnSubscribers(uint ID) public constant returns(address[], uint){
+	function returnSubscribers(uint ID) public view returns(address[] memory, uint){
 		return (subscriptions[ID].subscribers, subscriptions[ID].subscribers.length);
 	}
 
-	function checkSubscription(uint ID, address subscriber) public constant returns(bool){
+	function checkSubscription(uint ID, address subscriber) public view returns(bool){
 		if (subscriptions[ID].ID != 0){
 			for(uint i = 0; i < subscriptions[ID].subscribers.length; i++){
 				if (subscriptions[ID].subscribers[i] == subscriber){
@@ -64,7 +64,7 @@ contract subscription {
 
 	}
 
-	function GetSubscriptionIndex(uint ID, address subscriber) internal constant returns(bool, uint){
+	function GetSubscriptionIndex(uint ID, address subscriber) internal view returns(bool, uint){
 		if (subscriptions[ID].ID != 0){
 			for(uint i = 0; i < subscriptions[ID].subscribers.length; i++){
 				if (subscriptions[ID].subscribers[i] == subscriber){
@@ -80,7 +80,7 @@ contract subscription {
 	}
 
 	function deleteSubscription(uint ID) public returns(bool){
-		var (state, index) = GetSubscriptionIndex(ID, msg.sender);
+		(bool state, uint256 index) = GetSubscriptionIndex(ID, msg.sender);
 		if (state == true){
 			subscriptions[ID].subscribers[index] = subscriptions[ID].subscribers[subscriptions[ID].subscribers.length -1]; 
 			delete subscriptions[ID].subscribers[subscriptions[ID].subscribers.length -1];

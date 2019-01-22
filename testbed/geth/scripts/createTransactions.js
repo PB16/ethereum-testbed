@@ -129,7 +129,7 @@ function modifyTransactions(startID, endID){
 
 function returnContractAddress(){
   //var contractAddress = "0xeeabb8864589e3545ae6f7ebcf8e4f86faa0dfdb1b24add6acd315456bdb7e96ded9c708f0f07894"; //New Fair contract
-  var contractAddress = "0x5272bc82ec68018cd02c12e62b8bc4a83e100d91"; //Unfair contract
+  var contractAddress = ""; //Unfair contract
 	return contractAddress;
 }
 
