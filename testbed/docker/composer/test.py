@@ -25,3 +25,6 @@ sleep(5)
 
 for x in miners:
     subprocess.run(["sudo", "./migration.sh", x])
+
+for x in miners:
+    os.system("python3 ../../truffle/setContractAddress.py " + x)

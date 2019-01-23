@@ -1,15 +1,33 @@
+import sys
 import re
 import os
 
+miner = sys.argv[1]
+
+migrations_file = "../../truffle/" + miner + "_migrations.txt"
+
 newContractAddress = ""
 
+num_lines = sum(1 for line in open(migrations_file))
+lines_in_file = []
+i = 0
+
 #extracting contract addresses from output of truffle.
-with open("../../truffle/migrations.txt", "r") as sfile:
+with open(migrations_file, "r") as sfile:
     for line in sfile:
         line = line.replace(" ","")
+        lines_in_file.append(line)
 
-        if "Offer:" in line:
-            newContractAddress = line.split(':')[1]
+for line in lines_in_file:
+    i += 1
+    
+    if "Deploying'subscription'" in line:
+        break
+
+for line in lines_in_file[i:]:
+    if "contractaddress:" in line:
+        newContractAddress = line.split(':')[1]
+        break
 
 #extracting the old contract address and replaces with the contract address.
 with open("../../geth/scripts/createTransactions.js") as tfile:
