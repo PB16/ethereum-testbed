@@ -32,7 +32,7 @@ Starting migrations...
 ======================
 > Network name:    'development'
 > Network id:      1234
-> Block gas limit: 79222174317
+> Block gas limit: 79454724578
 
 
 1_initial_migration.js
@@ -40,11 +40,11 @@ Starting migrations...
 
    Deploying 'Migrations'
    ----------------------
-   > transaction hash:    0xa2688ca316389e34a0c7d658140dba8c1bef3e326266cdbc36ede143e123f153
-   > Blocks: 1            Seconds: 4
-   > contract address:    0xAb54C6e0f06C8E639eca76f114A069353e9a5415
-   > account:             0x8A2A321770073ee2bd3F512E334B0A14Da2B18CF
-   > balance:             55
+   > transaction hash:    0xe4916a83f4f619e015be2874819742148fdfa9ab2b1d52ad627f23b70e291a8d
+   > Blocks: 0            Seconds: 20
+   > contract address:    0x2B4329A0f581E96dDa327170A7Baf06436E4669E
+   > account:             0x565f715E5DD2bFb9B2a70046C24fB417ccBF27a2
+   > balance:             40
    > gas used:            284908
    > gas price:           20 gwei
    > value sent:          0 ETH
@@ -62,11 +62,11 @@ Starting migrations...
 
    Deploying 'subscription'
    ------------------------
-   > transaction hash:    0xb7587d5874100df949cf12984ab1e74748b8c7849084a76c00a6cbb3fccd3cf3
-   > Blocks: 0            Seconds: 0
-   > contract address:    0xE210C6BEFF8Ed56569bD7fA8FB179412ef1eA3E1
-   > account:             0x8A2A321770073ee2bd3F512E334B0A14Da2B18CF
-   > balance:             70
+   > transaction hash:    0xdcced8faf3799a0b81d3a8ece99a3551b387fae4eaee9add9e81af2e68869eb5
+   > Blocks: 0            Seconds: 24
+   > contract address:    0x6f90283fBebb1BF9614f12960010659ee0658F33
+   > account:             0x565f715E5DD2bFb9B2a70046C24fB417ccBF27a2
+   > balance:             50
    > gas used:            936805
    > gas price:           20 gwei
    > value sent:          0 ETH

@@ -28,3 +28,4 @@ for x in miners:
 
 for x in miners:
     os.system("python3 ../../truffle/setContractAddress.py " + x)
+    os.system("python3 ../../truffle/load-test-scripts.py " + x)
