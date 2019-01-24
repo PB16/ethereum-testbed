@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.2;
 
 // not implementated contract but needed as a strutual guide for the checkExistingOffer to be able to call contract on chain
 contract offerFunction {
