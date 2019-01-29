@@ -1,4 +1,4 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.5.2;
 
 import "./Categorized.sol";
 import "./Pricing.sol";
@@ -25,13 +25,13 @@ contract Offer is Categorized, Pricing, DateTime {
 	address owner;
 	mapping (uint => OfferStruct) offers;
 
-	function Offer() public {
+	constructor() public {
 		uniqueIdentifier = 1;
 		owner = msg.sender;
 	}
 
-	function addOffer(string name, string category, string model, uint price,
-					  string endpoint, string inputs, string outputs, uint16 year,
+	function addOffer(string memory name, string memory category, string memory model, uint price,
+					  string memory endpoint, string memory inputs, string memory outputs, uint16 year,
 					  uint8 month, uint8 day, uint8 hour) public {
 		OfferStruct memory offer;
 		offer.ID = uniqueIdentifier;
@@ -49,7 +49,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		}
 	}
 
-	function GetIndex(uint ID, string input, string inputOutputIdentifier) internal constant returns(bool exists, uint index){
+	function GetIndex(uint ID, string memory input, string memory inputOutputIdentifier) internal pure returns(bool exists, uint index){
 		if (offers[ID].ID != 0 && offers[ID].provider == msg.sender){
 			if (keccak256(inputOutputIdentifier) == keccak256('input')){
 				for(uint i = 0; i < offers[ID].inputs.length; i++){
@@ -71,7 +71,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		return (false, 0);
 	}
 
-	function addInput(uint ID, string _inputs) internal{
+	function addInput(uint ID, string memory _inputs) internal{
 		if (msg.sender == offers[ID].provider){
 			strings.slice memory part;
 			var temp = _inputs;
@@ -84,7 +84,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		}
 	}
 
-	function addOutput(uint ID, string _outputs) internal{
+	function addOutput(uint ID, string memory _outputs) internal{
 		if (msg.sender == offers[ID].provider){
 			strings.slice memory part;
 			var temp = _outputs;
@@ -97,7 +97,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		}
 	}
 
-	function deleteInput(uint ID, string _input) public returns(bool deleted){
+	function deleteInput(uint ID, string memory _input) public returns(bool deleted){
 		var (state, index) = GetIndex(ID, _input, 'input');
 		if (state == true){
 			offers[ID].inputs[index] = offers[ID].inputs[offers[ID].inputs.length -1];
@@ -109,7 +109,7 @@ contract Offer is Categorized, Pricing, DateTime {
 	}
 
 
-	function deleteOutput(uint ID, string _output) public returns(bool deleted){
+	function deleteOutput(uint ID, string memory _output) public returns(bool deleted){
 		var (state, index) = GetIndex(ID, _output, 'output');
 		if (state == true){
 			offers[ID].outputs[index] = offers[ID].outputs[offers[ID].outputs.length -1];
@@ -120,7 +120,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		return false;
 	}
 
-	function changeEndpoint(uint ID, string adressOfEndpoint) internal {
+	function changeEndpoint(uint ID, string memory adressOfEndpoint) internal {
 		if (msg.sender == offers[ID].provider){
 			offers[ID].endpoint = adressOfEndpoint;
 		}
@@ -132,13 +132,13 @@ contract Offer is Categorized, Pricing, DateTime {
 		}
 	}
 
-	function getOffer(uint _ID) public constant returns (uint ID, address provider, string name, string category, uint price, string endpoint, bytes32[] inputs, bytes32[] outputs) {
+	function getOffer(uint _ID) public pure returns (uint ID, address provider, string memory name, string memory category, uint price, string memory endpoint, bytes32[] memory inputs, bytes32[] memory outputs) {
 		OfferStruct memory offer;
 		offer = offers[_ID];
 		return (offer.ID, offer.provider, offer.name, offer.category, offer.price, offer.endpoint, offer.inputs, offer.outputs);
 	}
 
-	function offeringQueryOne(string category, uint price, bytes32[] inputs, bytes32[] outputs, uint ittr) public constant returns (uint) {
+	function offeringQueryOne(string memory category, uint price, bytes32[] memory inputs, bytes32[] memory outputs, uint ittr) public pure returns (uint) {
 		bytes memory byteCategory = bytes(category); // Uses memory
 		if(byteCategory.length == 0) {
 			return 9998;
@@ -167,8 +167,8 @@ contract Offer is Categorized, Pricing, DateTime {
 				if(outputs.length > 0 && inputCount >= inputs.length) {
 					//Search for output
 					uint outputCount = 0;
-					for(j=0; j<offers[i].outputs.length; j++) {
-						for(k=0; k<outputs.length; k++) {
+					for(uint j=0; j<offers[i].outputs.length; j++) {
+						for(uint k=0; k<outputs.length; k++) {
 							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
 								outputCount = outputCount + 1;
 							}
@@ -186,7 +186,7 @@ contract Offer is Categorized, Pricing, DateTime {
 		return 9999;
 	}
 
-	function offeringQueryOneOffset(string category, uint price, bytes32[] inputs, bytes32[] outputs, uint ittr, uint offSet) public constant returns (uint) {
+	function offeringQueryOneOffset(string memory category, uint price, bytes32[] memory inputs, bytes32[] memory outputs, uint ittr, uint offSet) public pure returns (uint) {
 		bytes memory byteCategory = bytes(category); // Uses memory
 		if(byteCategory.length == 0) {
 			return 9998;
@@ -224,8 +224,8 @@ contract Offer is Categorized, Pricing, DateTime {
 				if(outputs.length > 0 && inputCount >= inputs.length) {
 					//Search for output
 					uint outputCount = 0;
-					for(j=0; j<offers[i].outputs.length; j++) {
-						for(k=0; k<outputs.length; k++) {
+					for(uint j=0; j<offers[i].outputs.length; j++) {
+						for(uint k=0; k<outputs.length; k++) {
 							if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
 								outputCount = outputCount + 1;
 							}
@@ -244,9 +244,9 @@ contract Offer is Categorized, Pricing, DateTime {
 		return 9999;
 	}
 
-	function offeringQueryList(string category, uint price, bytes32[] inputs, bytes32[] outputs, uint ittr) public constant returns (uint[]) {
+	function offeringQueryList(string memory category, uint price, bytes32[] memory inputs, bytes32[] memory outputs, uint ittr) public pure returns (uint[] memory) {
 		bytes memory byteCategory = bytes(category); // Uses memory
-		uint[] candidates;
+		uint[] memory candidates;
 		if(byteCategory.length == 0) {
 			return candidates;
 		}
@@ -274,8 +274,8 @@ contract Offer is Categorized, Pricing, DateTime {
 					if(outputs.length > 0 && inputCount >= inputs.length) {
 						//Search for output
 						uint outputCount = 0;
-						for(j=0; j<offers[i].outputs.length; j++) {
-							for(k=0; k<outputs.length; k++) {
+						for(uint j=0; j<offers[i].outputs.length; j++) {
+							for(uint k=0; k<outputs.length; k++) {
 								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
 									outputCount = outputCount + 1;
 								}
@@ -294,10 +294,10 @@ contract Offer is Categorized, Pricing, DateTime {
 		return candidates;
 	}
 
-	function offeringQueryListTest(string category, uint price, bytes32[] inputs, bytes32[] outputs, uint ittr) public constant returns (uint) {
+	function offeringQueryListTest(string memory category, uint price, bytes32[] memory inputs, bytes32[] memory outputs, uint ittr) public pure returns (uint) {
 		bytes memory byteCategory = bytes(category); // Uses memory
 		uint result = 0;
-		uint[] candidates;
+		uint[] memory candidates;
 		candidates.push(1);
 		if(byteCategory.length == 0) {
 			return 0;
@@ -326,8 +326,8 @@ contract Offer is Categorized, Pricing, DateTime {
 					if(outputs.length > 0 && inputCount >= inputs.length) {
 						//Search for output
 						uint outputCount = 0;
-						for(j=0; j<offers[i].outputs.length; j++) {
-							for(k=0; k<outputs.length; k++) {
+						for(uint j=0; j<offers[i].outputs.length; j++) {
+							for(uint k=0; k<outputs.length; k++) {
 								if(keccak256(offers[i].outputs[j]) == keccak256(outputs[k])) {
 									outputCount = outputCount + 1;
 								}
@@ -347,7 +347,7 @@ contract Offer is Categorized, Pricing, DateTime {
 	}
 
 
-	function getOfferLength() public constant returns (uint length){
+	function getOfferLength() public pure returns (uint length){
 		uint offerLength = uniqueIdentifier;
 		return offerLength;
 	}
