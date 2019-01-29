@@ -1,1 +1,0 @@
-geth account list --keystore $1/keystore/ > accountKeys.txt
