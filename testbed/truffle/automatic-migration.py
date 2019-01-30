@@ -1,9 +1,12 @@
+import sys
 import pexpect
 from time import sleep
 import os
 
+miner = sys.argv[1]
+
 #Spawn geth instance of miner1.
-geth = pexpect.spawn("geth attach ipc:filecontainer/miner1/geth.ipc")
+geth = pexpect.spawn("geth attach ipc:filecontainer/" + miner + "/geth.ipc")
 i = 0
 
 while True:
