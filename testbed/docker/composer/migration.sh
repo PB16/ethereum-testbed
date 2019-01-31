@@ -1,3 +1,4 @@
+#$1 is the miner executing the operations.
 #Deploying smart contracts and pipe the output to a txt file.
 sudo docker exec -it composer_$1_1 /bin/bash -c "cd truffle/ && truffle migrate > migrations.txt"
 

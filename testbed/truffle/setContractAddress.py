@@ -2,6 +2,7 @@ import re
 import os
 import sys
 
+#Get the correct miner and set the path for file containing information about migrated contracts.
 migrationsfile = sys.argv[1] + "_migrations.txt"
 
 newContractAddress = ""
@@ -16,7 +17,7 @@ with open("../../truffle/" + migrationsfile, "r") as sfile:
         if "Deploying'subscription'" in line:
             for line in lines[i:]:
                 line = line.replace(" ","")
-                
+
                 if 'contractaddress:' in line:
                     newContractAddress = line.split(':')[1]
                     break
