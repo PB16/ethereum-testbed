@@ -2,6 +2,7 @@ import sys
 import pexpect
 from time import sleep
 
+#Get the correct miner.
 miner = sys.argv[1]
 
 #Spawn geth instance to run the tests in.
@@ -25,7 +26,7 @@ result = result.replace("end","")
 
 geth.expect("undefined")
 
-#Saving the test results in a file. 
+#Saving the test results in a file.
 with open(miner + "_results.txt","w") as tfile:
 	tfile.writelines(result)
 
