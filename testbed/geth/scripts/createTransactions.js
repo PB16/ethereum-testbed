@@ -129,7 +129,7 @@ function modifyTransactions(startID, endID){
 
 function returnContractAddress(){
   //var contractAddress = "0xeeabb8864589e3545ae6f7ebcf8e4f86faa0dfdb1b24add6acd315456bdb7e96ded9c708f0f07894"; //New Fair contract
-  var contractAddress = "0x5272bc82ec68018cd02c12e62b8bc4a83e100d91"; //Unfair contract
+  var contractAddress = "0x4f719379a1e86D9d4D84A757eEB70222629B2608"; //Unfair contract
 	return contractAddress;
 }
 
@@ -142,120 +142,6 @@ function returnContractInterface(){
       "type": "constructor"
     },
     {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "model",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "endpoint",
-          "type": "string"
-        },
-        {
-          "name": "inputs",
-          "type": "string"
-        },
-        {
-          "name": "outputs",
-          "type": "string"
-        },
-        {
-          "name": "year",
-          "type": "uint16"
-        },
-        {
-          "name": "month",
-          "type": "uint8"
-        },
-        {
-          "name": "day",
-          "type": "uint8"
-        },
-        {
-          "name": "hour",
-          "type": "uint8"
-        }
-      ],
-      "name": "addOffer",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "ID",
-          "type": "uint256"
-        },
-        {
-          "name": "_input",
-          "type": "string"
-        }
-      ],
-      "name": "deleteInput",
-      "outputs": [
-        {
-          "name": "deleted",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "ID",
-          "type": "uint256"
-        },
-        {
-          "name": "_output",
-          "type": "string"
-        }
-      ],
-      "name": "deleteOutput",
-      "outputs": [
-        {
-          "name": "deleted",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "ID",
-          "type": "uint256"
-        }
-      ],
-      "name": "deleteOffer",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "constant": true,
       "inputs": [
         {
@@ -263,197 +149,11 @@ function returnContractInterface(){
           "type": "uint256"
         }
       ],
-      "name": "getOffer",
-      "outputs": [
-        {
-          "name": "ID",
-          "type": "uint256"
-        },
-        {
-          "name": "provider",
-          "type": "address"
-        },
-        {
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "endpoint",
-          "type": "string"
-        },
-        {
-          "name": "inputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "outputs",
-          "type": "bytes32[]"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "inputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "outputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "ittr",
-          "type": "uint256"
-        }
-      ],
-      "name": "offeringQueryOne",
+      "name": "CheckExistingOffer",
       "outputs": [
         {
           "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "inputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "outputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "ittr",
-          "type": "uint256"
-        },
-        {
-          "name": "offSet",
-          "type": "uint256"
-        }
-      ],
-      "name": "offeringQueryOneOffset",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "inputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "outputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "ittr",
-          "type": "uint256"
-        }
-      ],
-      "name": "offeringQueryList",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256[]"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "name": "price",
-          "type": "uint256"
-        },
-        {
-          "name": "inputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "outputs",
-          "type": "bytes32[]"
-        },
-        {
-          "name": "ittr",
-          "type": "uint256"
-        }
-      ],
-      "name": "offeringQueryListTest",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "getOfferLength",
-      "outputs": [
-        {
-          "name": "length",
-          "type": "uint256"
+          "type": "bool"
         }
       ],
       "payable": false,
@@ -462,9 +162,84 @@ function returnContractInterface(){
     },
     {
       "constant": false,
-      "inputs": [],
-      "name": "destroy",
-      "outputs": [],
+      "inputs": [
+        {
+          "name": "_ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "createSubscription",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "returnSubscribers",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        },
+        {
+          "name": "subscriber",
+          "type": "address"
+        }
+      ],
+      "name": "checkSubscription",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ID",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteSubscription",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"

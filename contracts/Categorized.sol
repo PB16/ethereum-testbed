@@ -1,9 +1,9 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.5.2;
 
 import "./StringUtils.sol";
 
 contract Categorized {
-  function isCategoryAllowed(string category) pure internal returns(bool) {
+  function isCategoryAllowed(string memory category) pure internal returns(bool) {
     if(StringUtils.equal(category, "MobilityFeatureCategory")) {
       return true;
     }

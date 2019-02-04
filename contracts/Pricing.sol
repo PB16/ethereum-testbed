@@ -1,9 +1,9 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.5.2;
 
 import "./StringUtils.sol";
 
 contract Pricing {
-  function isPricingModelAllowed(string model) pure internal returns(bool) {
+  function isPricingModelAllowed(string memory model) pure internal returns(bool) {
     if(StringUtils.equal(model, "FREE")) {
       return true;
     }
